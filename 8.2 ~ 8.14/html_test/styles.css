@@ -1,0 +1,75 @@
+h1 {
+    color: red;
+
+}
+
+p {
+    color: green;
+}
+
+li {
+    list-style-type: none;
+    /* 리스트 앞의 점을 없앤다. */
+}
+
+li.special {
+    /* li 아래의 special만 선택한다.*/
+    color: orange;
+    font-weight: bold;
+}
+
+/* .special{  모든 special을 선택한다.
+    color: orange;
+    font-weight: bold;
+} */
+
+li em {
+    /* li 아래의 em만 선택한다.*/
+    color: rebeccapurple;
+}
+
+h1+p {
+    /* + : h1에 인접한 p를 같이 묶는다. */
+    font-size: 200%;
+}
+
+a:link {
+    color: pink;
+    /* a에 대한 설정 참조 */
+    /* 방문 전 */
+}
+
+a:visited {
+    color: green;
+    /* 방문 후 */
+}
+
+a:hover {
+    text-decoration: none;
+    /* 마우스 오버했을 때 */
+    /* none : 밑줄 사라짐 */
+}
+
+#title {
+    color: blue;
+    /* #id : id만 선택하여 설정 */
+}
+
+.outer {
+    border: 5px solid black;
+    /* 그래프 테두리 */
+}
+
+.box {
+    padding: 10px;
+    width: calc(90% - 30px);
+    background-color: rebeccapurple;
+    color: white;
+    /* 90%만 차 있는 그래프 완성 */
+
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(0.8turn);
+    /* 크기 바꾸고 변형시킴 */
+}

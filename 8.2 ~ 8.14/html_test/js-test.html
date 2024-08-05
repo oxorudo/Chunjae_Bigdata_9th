@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script></script>
+</head>
+
+<body>
+    <p>click me</p>
+</body>
+
+<script>
+    // 테스트 코드 : js는 생각보다 많은 일을 할 수 있다.
+    // const para = document.querySelector('p');
+
+    // para.addEventListener("click",updateName);
+
+    // function updateName(){
+    //     const name = prompt('Enter a new name');
+    //     para.textContent = `Player 1: ${name}`;
+    // }
+
+    // js에서는 변수를 선언하는 방법이 다음과 같다.
+    var a = 1;
+    let b = '안녕하세요';
+    const c = '저는 변수입니다';
+
+
+
+    // alert(a) a가 적힌 알림창 띄움
+    document.write(a, b, c); // HTML에 데이터를 씀
+    console.log(a, b, c); // document 콘솔에 데이터를 입력
+    // 파이썬의 print()와 같은 역할
+
+    var plus = a + b;
+    // 문자열끼리 더하면 두 값이 붙음
+    var mathPlus = a + 1;
+    console.log(plus);
+    console.log(mathPlus);
+
+    a = a + 1;
+    a += 1;
+    a++; // 증감연산자
+    // 위의 세 개는 뜻이 같다.
+
+    a = a - 1;
+    a -= 1;
+    a--;
+    // 위의 세 개도 뜻이 같다.
+    console.log(a);
+
+    console.log(a%2); // 나머지
+    console.log(a/2); // 몫
+    console.log(a*2); // 곱
+    console.log(a**2); // 제곱
+
+    console.log(a == '1'); // 타입 추론 없이 값이 같은지 참 거짓 확인
+    console.log(1 === '1'); // 타입 추론도 하면서 값이 같은지 확인
+    
+    // if문
+    if (a === '1') {
+        console.log("a는 1 입니다.");
+    }
+    else{
+        console.log('a는 1이 아닙니다.');
+    }
+
+    // for문
+    // py: for i in range(0,10)
+    for(let i = 0; i < 10; i++){
+        console.log(`${i}번째 데이터입니다.`);
+    }
+
+    // js는 따로 list가 없고 배열이 그 역할을 대신한다.
+    let array = [1,2,'3'];
+    console.log(array);
+
+    // for data in array:
+    for (let data of array){
+        console.log(data)
+    }
+
+    // 실습 : 구구단을 찍으세요.
+    // document.write()를 이용하고
+    // 9단만 찍어주세요.
+    
+    for(i =1; i < 10; i++){
+        document.write(i * 9 + '\n')
+    }
+    </script>
+
+</html>

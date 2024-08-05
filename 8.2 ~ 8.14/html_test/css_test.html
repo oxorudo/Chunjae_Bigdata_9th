@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css는 class를 지목하고 외형을 바꿔줄 수 있다. */
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .anchor {
+            text-decoration: none;  /* 클릭한 후 색깔 바뀌는 것 방지 */
+            color: #fff;
+        }
+
+        .container {
+            background-color: #000;
+            display: flex; /* 가로 정렬 */
+            align-items: center; /* (수직적)중앙 정렬 */
+            justify-content: center; /* (수평적)중앙 정렬 */
+            gap: 40px; /* 간격 */
+        }
+
+        .img-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+        }
+
+        .img-container__image {
+            width: 200px; /* 크기 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>우리가 처음 만든 웹페이지</h1>
+
+    <!-- div 태그 : 영역을 나누는 역할을 한다. -->
+    <div class='container'>
+        <!-- class는 각각의 영역의 이름을 정해준다. -->
+        <!-- 순서가 없기 때문에 앞에 점이 자동으로 나온다. -->
+        <div class="container__column">
+            <!-- 순서가 없는 리스트 -->
+            <h3>장보기 목록</h3>
+            <ul>
+                <li>우유</li>
+                <li>계란</li>
+                <li>빵</li>
+                <li>기타</li>
+            </ul>
+        </div>
+        <div class="container__column">
+            <!-- 순서가 있는 리스트 -->
+            <h3>오늘의<em> 할일</em></h3>
+            <!-- 순서를 의미하는 번호가 자동으로 생김 -->
+            <ol>
+                <li><strong>공부하기</strong></li>
+                <li>집에 가기</li>
+                <li>자기</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- em, strong : 이탤릭체, 볼드 -->
+    <!-- 참고 : 리스트 안의 리스트도 가능하다. -->
+
+    <!-- 하이퍼링크는 다른 사이트로의 이동을 의미한다. -->
+
+    <!-- 이미지 파일 첨부는 직접 태그를 닫아줘야 하고, src에 같은 폴더 안에 있는 이미지 경로를 담는다. -->
+    <div class="img-container">
+        <a class="anchor" href="https://chatgpt.com">chatGPT</a>
+        <img class='img-container__image' src="다운로드.jpeg"></img>
+    </div>
+
+</body>
+
+</html>

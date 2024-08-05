@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="content">
+    </p>
+
+    <button id = 'click_me'>
+    Click me
+    </button>
+
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+</body>
+<script>
+    // HTML을 js로 가지고 오는 방법이 존재한다.
+    // document 객체를 사용한다.
+    // document = DOM(HTML => 데이터화)
+    // dom control : js로 html 코드를 수정할 수 있음.
+    const click_me = document.getElementById('click_me'); // id로 html 태그 가져옴
+
+    console.log(click_me); 
+
+    const text = click_me.innerHTML; // html 안의 텍스트를 가져옴
+
+    console.log(text);
+    
+    click_me.textContent = 'hello?'; // html 안의 텍스트를 바꿈
+
+    const content = document.querySelector("#content"); // id로 태그 가져옴 (css처럼 # 붙여서 가져옴)
+    const button = document.querySelector("#click_me");
+    
+    console.log(content);
+    console.log(button);
+    
+    // 이벤트 리스너 : 무언가 행동하면 반응을 하도록 시킴
+    // 이벤트 리스너는 매개변수가 두개 필요
+    // 첫번째 ; 받을 이벤트(행동)
+    // 두번째 : 행동(함수)
+    
+    function changeContent(e) { // 함수 정의
+        content.textContent = '까꿍' // 태그의 텍스트 변경
+        // content.style.backgroundColor = 'skyblue' // css 스타일 정해줄 수 있음.
+        content.classList.add('red') // 클릭을 누르면 클래스에 red가 들어감.
+    }
+
+    button.addEventListener('click', changeContent) // 함수는 실행하지 않고 그냥 삽입
+</script>
+</html>

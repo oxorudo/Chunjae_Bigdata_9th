@@ -28,7 +28,16 @@
     let b = '안녕하세요';
     const c = '저는 변수입니다';
 
+    // var, let, const의 차이
+    // var = 전역변수 선언
+    // var는 for / if 같은 블록 밖에서도 참조가 가능하다는 문제점이 있음
+    // let = 변수 선언이고, for / if 같은 블록 안과 밖의 값이 구분됨
+    // const = 상수 : 한번 선언하면 데이터 변경이 불가능함(재할당시 에러 발생)
 
+    // var : 업데이트, 재선언 모두 가능 / let : 업데이트 가능, 재선언 불가 / const : 업데이트, 재선언 모두 불가
+
+    // let / const 언제 사용할까?
+    // 보통은 const를 사용, 만약에 재할당이 필요한 경우 let 사용
 
     // alert(a) a가 적힌 알림창 띄움
     document.write(a, b, c); // HTML에 데이터를 씀
@@ -52,44 +61,78 @@
     // 위의 세 개도 뜻이 같다.
     console.log(a);
 
-    console.log(a%2); // 나머지
-    console.log(a/2); // 몫
-    console.log(a*2); // 곱
-    console.log(a**2); // 제곱
+    console.log(a % 2); // 나머지
+    console.log(a / 2); // 몫
+    console.log(a * 2); // 곱
+    console.log(a ** 2); // 제곱
 
     console.log(a == '1'); // 타입 추론 없이 값이 같은지 참 거짓 확인
     console.log(1 === '1'); // 타입 추론도 하면서 값이 같은지 확인
-    
+
     // if문
     if (a === '1') {
         console.log("a는 1 입니다.");
     }
-    else{
+    else {
         console.log('a는 1이 아닙니다.');
     }
 
     // for문
     // py: for i in range(0,10)
-    for(let i = 0; i < 10; i++){
+    for (let i = 0; i < 10; i++) {
         console.log(`${i}번째 데이터입니다.`);
     }
 
     // js는 따로 list가 없고 배열이 그 역할을 대신한다.
-    let array = [1,2,'3'];
+    let array = [1, 2, '3'];
     console.log(array);
 
     // for data in array:
-    for (let data of array){
+    for (let data of array) {
         console.log(data)
     }
 
     // 실습 : 구구단을 찍으세요.
     // document.write()를 이용하고
     // 9단만 찍어주세요.
-    
-    for(i =1; i < 10; i++){
-        document.write(`9 x ${i} = `+ i * 9 + '\n')
+
+    for (i = 1; i < 10; i++) {
+        document.write(`9 x ${i} = ` + i * 9 + '</br>')
+    } // </br> = html 개행
+
+    // py : 데이터 딕셔너리라고 함
+    // js에서는 객체(object)라고 함
+    const obj = {
+        //key : value
+        a: 1,
+        b: 25,
+        c: "안녕하세요"
+    };
+
+    console.log(obj)
+
+    a = 70;
+    // py엔 없는데 js엔 있는 것
+    // switch - case 문
+    switch (a) {
+        case 100:
+            console.log("a의 학점은 A입니다.");
+            break; // break를 적지 않으면 아래 문까지 다 실행해 버림.
+        case 90:
+            console.log("a의 학점은 B입니다.");
+            break;
+        case 80:
+            console.log("a의 학점은 C입니다.");
+            break;
+        case 70:
+            console.log("a의 학점은 D입니다.");
+            break;
+        default:
+            console.log("a는 불합격입니다.");
+            break;
     }
-    </script>
+
+    // if문과 switch문은 취향차이.
+</script>
 
 </html>

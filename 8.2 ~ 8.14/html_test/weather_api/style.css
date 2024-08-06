@@ -1,0 +1,188 @@
+/* 리셋 >> 브라우저가 자체적으로 스타일을 가지는데, */
+/* 초기화 >> 그 스타일을 걷어내는 과정 */
+*{ /*  * : 모든 태그에 대해 적용한다는 뜻 */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh; /* 브라우저 크기에 비례 */
+    /* 아래 옵션대로 하면 중앙배치가 된다. */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background: #06283D;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background: #fff;
+    padding: 28px 32px;
+    /* padding의 가로 세로 값 */
+    overflow: hidden; /* 넘친 것들 숨김 처리 */
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out; /* 애니메이션을 줌 */
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    color:#06283D;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize; /* 첫 문자 대문자로 변경 */
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #06283D;
+    background: #dff6ff;
+    border-radius: 22px;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+
+.search-box button:hover{ /* 마우스 올렸을 때 색 바뀜 */
+    color: #fff;
+    background: #06283D;
+}
+
+.search-box i{
+    position: absolute;
+    color: #06283D;
+    font-size: 28px;
+}
+
+.weather-box{
+    text-align: center;
+}
+
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.weather-box .temperature{
+    position: relative;
+    color: #06283D;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.weather-box .description{
+    color:#06283D;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.weather-details .humidity, .weather-details .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-details .wind{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-details i{
+    color: #06283D;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.weather-details span{
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.weather-details p{
+    color: #06283D;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found img{
+    width: 70%;
+}
+
+.not-found p{
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.weather-box, .weather-details{
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>고양이</h1>
+    <div class="get-container">
+        <p class="get-container__type"></p>
+        <p class="get-container__text"></p>
+    </div>
+</body>
+<script>
+    const url = "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=2";
+    // #. promise를 받았을 때 then을 이용해서 받아보기.
+    //fetch(url)
+    //    .then((response) => response.json())
+    //    .then((json) => {
+    //        console.log(json);
+    //    });
+
+    // #. async / await 버전
+    const typeElement = document.querySelector(".get-container__type");
+    const textElement = document.querySelector(".get-container__text")
+    const getCatData = async () => {
+        const response = await fetch(url);
+        const cats = await response.json();
+        console.log(cats);
+        /**
+        let text = "";
+        let type = "";
+        for (const cat of cats) {
+            text += cat.text + "|";
+            type += cat.type + "|";
+        }
+        */
+        const text = cats.map(cat => cat.text).join("|");
+        // #. 구조 분해 문법 이라고 하는데, 변수를 선언할때
+        // #. 어떤 객체의 구조를 바로 분해할 수 있는 문법이다.
+        const type = cats.map(({ type }) => type).join("|");
+        typeElement.textContent = type;
+        textElement.textContent = text;
+    }
+
+    // #. 구조 분해 문법은 변수를 선언하지 않아도 
+    // #. 객체의 Key에 해당하는 value를 가지고 오는 방법이다.
+    const object = { name: "111", data: [], age: 18 };
+    // #. 객체에 없는 키를 구조분해 문법으로 가져올 경우
+    // #. 디폴트 값을 줘야 안전합니다.
+    const { name, age, a = 0 } = object;
+    console.log(name, age, a);
+    getCatData();
+
+    // #. 실습
+    // #. api 결과물 중에 [0, 1]
+    // #. 각 배열에 있는 데이터의 text를 get-container__text에
+    // #. 각 배열에 있는 데이터의 type을 get-container__type에
+    // #. '|'로 합쳐진 문자열로 넣어보기.
+</script>
+
+</html>

@@ -5,7 +5,7 @@ def db_connect():
     conn = pymysql.connect(
         host='localhost',
         user='testuser',
-        password='Tkkwak0419?!',
+        password='',
         db='db_test',
         charset='utf8mb4',
         # 사용시 데이터 딕셔너리로 데이터가 반환됨.

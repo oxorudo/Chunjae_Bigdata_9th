@@ -1,0 +1,36 @@
+<!-- layout.html을 기반으로 작성한다는 뜻이다.-->
+{% extends "layout.html" %}
+{% block body %}
+<!-- 중괄호+퍼센트를 사용하면 그 블럭 내부는 파이썬 코드가 들어간다. -->
+<!-- if문을 사용하면 if 블럭 내부의 HTML을 보여준다. -->
+  {% if session.logged_in %}
+<!-- 아래 중괄호 두 겹이 뜻하는 것은 변수나 함수의 리턴을 표시해준다. -->
+    <form action="{{ url_for('add_entry') }}" method="post" class="add-entry">
+      <dl>
+        <dt>Title:</dt>
+        <dd><input type="text" size="30" name="title"></dd>
+        <dt>Text:</dt>
+        <dd>
+          <textarea name="text" rows="5" cols="40"></textarea>
+        </dd>
+        <dd><input type="submit" value="Share"></dd>
+      </dl>
+    </form>
+  {% endif %}
+  <!-- endif : 여기까지가 if문이라는 뜻이다. -->
+  <ul class="entries">
+    <!-- for문은 entries의 길이만큼 블록 내부의 html을 계속 생성한다. -->
+    {% for entry in entries %}
+      <li>
+        <!-- entry.title 값과 entry.text 값을 여기에 text로 보여줌 -->
+        <h2>{{ entry.title }}</h2>{{ entry.text|safe }}
+      </li>
+    <!-- else 구문은 entries 길이가 0일 경우 나타내준다. -->
+      {% else %} 
+      <li>
+        <em>Unbelievable. No entries here so far</em>
+      </li>
+    {% endfor %}
+    <!-- endfor : 여기까지가 for문이라는 뜻이다. -->
+  </ul>
+{% endblock %}

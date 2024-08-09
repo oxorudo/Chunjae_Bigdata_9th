@@ -113,8 +113,7 @@ def view_board_detail(board_id):
     with db_connect() as conn:
         with conn.cursor() as cur:
             cur.execute(sql, board_id)
-            board = cur.fetchone()
-            print(board) # fetchone : 데이터가 반드시 한 건임을 보장.
+            board = cur.fetchone() # fetchone : 데이터가 반드시 한 건임을 보장.
     return render_template('board_detail.html', board=board)
 
 @app.route('/board/update/<int:board_id>', methods=['GET'])

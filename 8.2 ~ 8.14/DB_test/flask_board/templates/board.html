@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+  <div>
+    <h1>게시판</h1>
+    <div>
+        {% if session.user %}
+        <button id = 'insert'>
+            게시글 작성
+        </button>
+        {% endif %}
+    </div>
+    {% for board in boards %}
+      <div>
+        <a href="{{url_for('view_board_detail', board_id = board.id)}}">{{ board.title }}</a>
+        |
+        {{board.update_date}}
+      </div>
+    {% endfor %}
+  </div>
+  <script>
+    const button = document.querySelector('#insert');
+    if (button) {
+        button.addEventListener('click', () => {
+            // url 정보를 가지고 잇는 객체도 있음
+            location.href = "{{url_for('view_insert_board')}}"
+        })
+    }
+    
+    
+  </script>
+{% endblock body %}

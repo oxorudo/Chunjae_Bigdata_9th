@@ -8,6 +8,7 @@ from flask import (
     request,
     flash,
     url_for,
+    jsonify
 )
 from db.connection import db_connect
 
@@ -50,6 +51,35 @@ def show_entries():
     # render_template는 플라스크 안에 있음
     return render_template("show_entries.html", entries=entries)
 
+
+# 하고싶은 것 : 우리의 Flask는 지금 HTML만 받는다.
+# HTML뿐만 아니라 json이라고 하는 데이터 형태로 response를 전달하고 싶다.
+@app.route('/api/entries')
+def json_entries():
+    sql = '''
+            SELECT id, title, text
+            FROM entries
+            ORDER BY id DESC
+            '''
+    
+    entries = []
+    with db_connect() as conn:
+        with conn.cursor() as cur:
+            cur.execute(sql)
+            entries = cur.fetchall()
+
+    # 파이썬이 가지고 있는 튜플, 리스트, 데이터 딕셔너리를
+    # json 문법에 맞게(배열, 자바스크립트 객체)로 변경해 준다.
+    return jsonify(entries)
+
+# 실습
+@app.route("/entries")
+def view_entries():
+    # 0. 데이터베이스나 지금 이 사이트를 이용하여 데이터를 추가합니다.
+    # 1. 이 라우터가 빈 HTML을 반환하도록 한다.
+    # 2. js에서 fetch()를 이용해서 entries 데이터를 호출하도록 한다.
+    # 3. js를 이용하여 화면에 entries의 제목들이 나오도록 해 봅시다.
+    return render_template('show_data.html')
 
 # methods=[POST] : POST 요청만 받는다는 뜻
 @app.route("/add", methods=["POST"])

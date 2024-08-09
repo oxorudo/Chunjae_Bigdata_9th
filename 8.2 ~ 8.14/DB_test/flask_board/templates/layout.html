@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>메뉴</div>
+    <ul>
+        <li>
+            <!-- 지금 문제는 다른 사람들이 내 페이지에 접속해도 -->
+            <!-- 다른 사람들의 주소로 가버니는 문제가 있습니다. -->
+            <!-- 상대경로 : http://127.0.0.1:5000을 제거하자. : 이것은 웹 기본 기능이지만, 파이썬 문법은 아님.-->
+            <!-- python : 라우터 방식 url_for()를 이용한다.-->
+            <!-- 둘이 다를 것은 없음, 권장은 url_for -->
+            <a href="/">메인 페이지</a>
+        </li>
+
+        <li>
+            <a href="/board">게시글 목록</a>
+        </li>
+        {% if session.user %}
+        <li>
+            <a href="{{url_for('logout')}}">로그아웃</a>
+        </li>
+        {% else %}
+        <li>
+            <a href="{{url_for('login')}}">로그인</a>
+        </li>
+        {% endif %}
+    </ul>
+    {% if session.user  %}
+    <div>
+        {{session.user.name}}님 환영합니다
+    </div>
+    {% endif %}
+    <hr>
+    <!-- 줄 태그 : -->
+    {% block body %}{% endblock %}
+    <!-- 이 블럭을 다른 페이지들의 기반으로 사용할 수 있음-->
+</body>
+</html>

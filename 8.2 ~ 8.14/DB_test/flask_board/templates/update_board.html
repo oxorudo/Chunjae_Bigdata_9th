@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div>
+        <h1>게시글 수정</h1>
+        <form action="{{url_for('update_board')}}" method='POST'>
+            <!-- type = hidden은 사용자 눈에는 보이지 않지만 submit 할 시에 서버로 데이터가 같이 전달됨-->
+            <input type="hidden" name="board_id" value="{{board.id}}">
+            <input type="text" name='title' value = "{{board.title}}">
+            <textarea name="content">{{board.content}}</textarea>
+            <button>작성</button>
+        </form>
+    </div>
+{% endblock body %}

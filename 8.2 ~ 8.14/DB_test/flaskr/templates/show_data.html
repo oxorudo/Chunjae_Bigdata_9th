@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entries</title>
+  </head>
+
+  <body>
+    <div class='data-container'>
+      <p class='get-container__id'></p>
+      <p class='get-container__title'></p>
+      <p class='get-container__text'></p>
+    </div>
+  </body>
+  <script>
+    const url = 'http://127.0.0.1:5000/api/entries'
+
+    async function fetchData() {
+      const idElement = document.querySelector(".get-container__id");
+      const titleElement = document.querySelector(".get-container__title");
+      const textElement = document.querySelector(".get-container__text")
+
+      const response = await fetch(url); // 데이터 가져오기
+      const data = await response.json(); // json으로 변환
+      // 데이터를 화면에 표시하는 함수 호출
+
+      console.log(data);
+
+      const id = data
+        .map(entry => entry.id)
+        .join(", ");
+      const title = data
+        .map(entry => entry.title)
+        .join(", ");
+      const text = data
+        .map(entry => entry.text)
+        .join(", ");
+
+      idElement.textContent = id;
+
+      titleElement.textContent = title;
+
+      textElement.textContent = text;
+    }
+
+    // 데이터를 가져옴
+    fetchData();
+  </script>
+
+</html>

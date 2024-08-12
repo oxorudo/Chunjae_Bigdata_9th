@@ -1,0 +1,1 @@
+# 장고 폴더 만드는 법 : 터미널에 django-admin startproject mytestsite 입력

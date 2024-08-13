@@ -39,13 +39,13 @@ class BookAdmin(admin.ModelAdmin):
 
 @admin.register(BookInstance)
 class BookInstanceAdmin(admin.ModelAdmin):
-    list_display = ('book', 'status', 'due_back', 'id')
+    list_display = ('book', 'status',  'borrower', 'due_back', 'id')
     list_filter = ('status', 'due_back') # 목록에서 필터링 기능 추가
     fieldsets = ( # 상세 창의 필드 섹션을 연관된 것들끼리 그룹화
         (None, {
             'fields' : ('book', 'imprint', 'id')
         }),
         ('Availabillity', {
-            'fields' : ('status', 'due_back')
+            'fields' : ('status', 'due_back', 'borrower')
         })
     ) 

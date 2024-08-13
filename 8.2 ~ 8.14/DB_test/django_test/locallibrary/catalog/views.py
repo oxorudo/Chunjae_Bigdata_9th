@@ -1,9 +1,14 @@
 from typing import Any
 from django.db.models.query import QuerySet
-from django.http import Http404
-from django.shortcuts import render
+from django.http import Http404, HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404
 from catalog.models import Book, Author, BookInstance, Genre
 from django.views import generic
+from django.contrib.auth.mixins import LoginRequiredMixin
+import datetime
+from django.urls import reverse
+from catalog.forms import RenewBookForm
+
 
 # Create your views here.
 # URL을 받아서 실제 뷰를 생성한다.
@@ -16,10 +21,15 @@ from django.views import generic
 # def aaa():
 #     return render_template()
 
+# 함수형 뷰에서 로그인 정보를 체크하는 방법
+# @login_required
 def index(request):
 
     # ?keyword=keyword 받을 수 있게 해야한다.
     keyword = request.GET.get('keyword')
+    
+    # 유저가 로그인되었는지 확인하기
+    # request.user.is_authenticated
     
     # 세션을 가져오는 방법
     # request.session.get('my_session')
@@ -52,7 +62,8 @@ def index(request):
     return render(request, 'index.html', context=context)
 
 
-class BookListView(generic.ListView):
+# LoginRequiredMixin : 이 클래스를 상속하면 로그인이 필요해진다.
+class BookListView(LoginRequiredMixin, generic.ListView):
     #  template 안에서 [model]_list 형태로 보여지게 된다.
     model = Book
     
@@ -106,3 +117,46 @@ class AuthorListView(generic.ListView):
 # author_detail
 class AuthorDetailView(generic.DetailView):
     model = Author
+
+
+class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):
+    model = BookInstance
+    template_name = 'catalog/bookinstance_list_borrowed_user.html'
+    paginate_by = 10
+
+    def get_queryset(self):
+        return (
+            BookInstance.objects.filter(borrower=self.request.user)
+            .filter(status__exact='o')
+            .order_by('due_back')
+        )
+    
+
+def renew_book_librarian(request, pk):
+    book_instance = get_object_or_404(BookInstance, pk=pk)
+
+    if request.method == 'POST':
+
+    # Create a form instance and populate it with data from the request (binding):
+        form = RenewBookForm(request.POST)
+
+    # Check if the form is valid:
+    if form.is_valid():
+        # process the data in form.cleaned_data as required (here we just write it to the model due_back field)
+        book_instance.due_back = form.cleaned_data['renewal_date']
+        book_instance.save()
+
+        # redirect to a new URL:
+        return HttpResponseRedirect(reverse('all-borrowed'))
+
+    # If this is a GET (or any other method) create the default form.
+    else:
+        proposed_renewal_date = datetime.date.today() + datetime.timedelta(weeks=3)
+        form = RenewBookForm(initial={'renewal_date': proposed_renewal_date})
+
+    context = {
+        'form': form,
+        'book_instance': book_instance,
+    }
+
+    return render(request, 'catalog/book_renew_librarian.html', context)

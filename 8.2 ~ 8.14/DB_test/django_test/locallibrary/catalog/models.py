@@ -2,6 +2,8 @@ from django.db import models
 from django.urls import reverse
 # uuid : 랜덤값을 만들어 냄.
 import uuid
+from django.conf import settings
+from datetime import date
 
 # Create your models here.
 # ORM을 위한 객체를 정의하는 곳이다.
@@ -53,6 +55,8 @@ class BookInstance(models.Model):
     book = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True)
     imprint = models.CharField(max_length=200)
     due_back = models.DateField(null=True, blank=True) # blank : 빈 값을 허용할 것인가?
+    # AUTH_USER_MODEL : django에서 기본으로 제공하는 유저 모델
+    borrower = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, blank=True)
 
     # 공통코드
     LOAN_STATUS = (
@@ -73,9 +77,14 @@ class BookInstance(models.Model):
 
     class Meta:
         ordering = ['due_back']
+        permissions = (('can_mark_returned', 'Set book as returned'),)
 
     def __str__(self):
         return f'{self.id} ({self.book.title})'
+    
+    @property
+    def is_overdue(self):
+        return bool(self.due_back and date.today() > self.due_back)
 
 
 class Author(models.Model):
@@ -93,3 +102,4 @@ class Author(models.Model):
     def __str__(self):
         return f'{self.last_name}, {self.first_name}'
     
+

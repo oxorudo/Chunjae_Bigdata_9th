@@ -48,4 +48,4 @@ class BookInstanceAdmin(admin.ModelAdmin):
         ('Availabillity', {
             'fields' : ('status', 'due_back')
         })
-    )
+    ) 

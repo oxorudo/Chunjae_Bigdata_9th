@@ -22,9 +22,15 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    # catalog -> url.py를 바라본다.
     path('catalog/', include('catalog.urls')),
     path('', RedirectView.as_view(url='/catalog/', permanent=True)),
     
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# 인증용 url 만들기
+urlpatterns += [
+    path('accounts/', include('django.contrib.auth.urls'))
+]

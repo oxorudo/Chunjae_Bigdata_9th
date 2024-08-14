@@ -1,0 +1,14 @@
+# get 요청 테스트
+# GET http://localhost:8000/catalog/api/books
+
+# post 요청 테스트
+POST http://localhost:8000/catalog/api/books 
+Content-Type: application/json
+
+{
+    "title" : "테스트 책",
+    "summary" : "테스트 요약",
+    "isbn" : "1231231231236",
+    "author" : "곽태경",
+    "genre" : [1,2]
+}

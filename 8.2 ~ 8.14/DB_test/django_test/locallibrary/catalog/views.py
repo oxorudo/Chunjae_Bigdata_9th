@@ -10,8 +10,10 @@ from django.urls import reverse, reverse_lazy
 from catalog.forms import RenewBookForm
 from django.contrib.auth.decorators import permission_required, login_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from .models import Author
-
+from .models import Author, Book, BookInstance
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from .serializers import BookSerializer, BookInstSerializer
 
 # Create your views here.
 # URL을 받아서 실제 뷰를 생성한다.
@@ -66,7 +68,7 @@ def index(request):
 
 
 # LoginRequiredMixin : 이 클래스를 상속하면 로그인이 필요해진다.
-class BookListView(LoginRequiredMixin, generic.ListView):
+class BookListView(generic.ListView):
     #  template 안에서 [model]_list 형태로 보여지게 된다.
     model = Book
     
@@ -211,3 +213,40 @@ class LoanedBookListViewForStaff(LoginRequiredMixin, PermissionRequiredMixin, ge
     # 관리자 유저일때만 접근 권한 부여
     permission_required = 'user.is_staff'
 
+# API를 리턴하기 위해서는 APIView를 상속받아야 한다.
+class BookListAPIView(APIView):
+    # 상속 받았으면 get 메소드를 구현해야 한다.
+    # get 함수 : 실제 검색어에 맞는 데이터를 리턴함.
+    def get(self, request):
+        # 데이터를 쿼리
+        books = Book.objects.all()
+        # 시리얼라이징
+        serializer = BookSerializer(books, many=True)
+        # response 형태로 리턴
+        return Response(serializer.data)
+    
+    # post 함수 : 받아온 데이터를 실제 데이터베이스에 적용
+    def post(self, request):
+        # request.data > 폼 데이터 안에 있는 데이터를 Model로 변경해 준다.
+        serializer = BookSerializer(data=request.data)
+        # 포맷을 통과했을 때
+        if serializer.is_valid():
+            # Book 형태로 데이터가 변환이 되었으므로, Book을 저장
+            serializer.save()
+
+        return Response(serializer.data)
+
+
+# 실습
+# Book_instance가 있는데, Book_id를 가져와서 id에 해당하는 Book_instance의 
+# 리스트를 가져오도록 하자.
+# 검색할때는 뒤에 ?book_id=id를 붙여서 접속하자.
+class BookInstanceAPIView(APIView):
+
+    def get(self, request):
+        book_id = request.GET['book_id']
+        inst = BookInstance.objects.filter(book__id__exact = book_id)
+
+        serializer = BookInstSerializer(inst, many=True)
+        return Response(serializer.data)
+        

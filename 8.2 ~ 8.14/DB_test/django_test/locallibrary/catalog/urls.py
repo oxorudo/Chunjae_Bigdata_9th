@@ -29,3 +29,8 @@ urlpatterns = [
 
     path('borrowed/', views.LoanedBookListViewForStaff.as_view(), name='all-borrowed'),
 ]
+
+urlpatterns += [
+    path('api/books', views.BookListAPIView.as_view()),
+    path('api/bookinst', views.BookInstanceAPIView.as_view()),
+]

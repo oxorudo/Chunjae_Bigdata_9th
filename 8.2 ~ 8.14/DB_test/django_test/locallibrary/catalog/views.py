@@ -4,10 +4,13 @@ from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from catalog.models import Book, Author, BookInstance, Genre
 from django.views import generic
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 import datetime
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from catalog.forms import RenewBookForm
+from django.contrib.auth.decorators import permission_required, login_required
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from .models import Author
 
 
 # Create your views here.
@@ -132,25 +135,31 @@ class LoanedBooksByUserListView(LoginRequiredMixin, generic.ListView):
         )
     
 
+@login_required
+@permission_required('catalog.can_mark_returned')
 def renew_book_librarian(request, pk):
     book_instance = get_object_or_404(BookInstance, pk=pk)
 
     if request.method == 'POST':
 
     # Create a form instance and populate it with data from the request (binding):
+    # 폼을 생성하고 요청을 받아옴
         form = RenewBookForm(request.POST)
 
     # Check if the form is valid:
-    if form.is_valid():
+    # 통과가 되었다면 데이터베이스에 데이터 저장
+        if form.is_valid():
         # process the data in form.cleaned_data as required (here we just write it to the model due_back field)
-        book_instance.due_back = form.cleaned_data['renewal_date']
-        book_instance.save()
+            book_instance.due_back = form.cleaned_data['renewal_date']
+            book_instance.save()
 
         # redirect to a new URL:
-        return HttpResponseRedirect(reverse('all-borrowed'))
+        # 대여 책 목록으로 이동
+            return HttpResponseRedirect(reverse('books'))
 
-    # If this is a GET (or any other method) create the default form.
+        # If this is a GET (or any other method) create the default form.
     else:
+        # form에 기본값을 넣어준다.
         proposed_renewal_date = datetime.date.today() + datetime.timedelta(weeks=3)
         form = RenewBookForm(initial={'renewal_date': proposed_renewal_date})
 
@@ -158,5 +167,47 @@ def renew_book_librarian(request, pk):
         'form': form,
         'book_instance': book_instance,
     }
-
+    # get 요청일때만 책 대여기간 연장 폼으로 이동
     return render(request, 'catalog/book_renew_librarian.html', context)
+
+class AuthorCreate(PermissionRequiredMixin, CreateView):
+    model = Author
+    fields = ['first_name', 'last_name', 'date_of_birth', 'date_of_death']
+    initial={'date_of_death' : '05/01/2018',}
+    permission_required = 'catalog.add_author'
+
+class AuthorUpdate(PermissionRequiredMixin, UpdateView):
+    model = Author
+    fields = '__all__'
+    permission_required = 'catalog.change_author'
+
+class AuthorDelete(PermissionRequiredMixin, DeleteView):
+    model = Author
+    success_url = reverse_lazy('authors')
+    permission_required = 'catalog.delete_author'
+
+    def form_valid(self, form):
+        try:
+            self.object.delete()
+            return HttpResponseRedirect(self.success_url)
+        except Exception as e:
+            return reverse('author-delete', kwargs={'pk': self.object.pk})
+            
+
+
+class LoanedBookListViewForStaff(LoginRequiredMixin, PermissionRequiredMixin, generic.ListView):
+    model = BookInstance
+
+    def get_queryset(self):
+        return (
+            # borrower가 null이면 안 된다.
+            # status가 o 여야 한다.
+        BookInstance.objects
+        .filter(borrower__isnull=False)
+        .filter(status__exact='o')
+        .order_by('due_back')
+    )
+    
+    # 관리자 유저일때만 접근 권한 부여
+    permission_required = 'user.is_staff'
+

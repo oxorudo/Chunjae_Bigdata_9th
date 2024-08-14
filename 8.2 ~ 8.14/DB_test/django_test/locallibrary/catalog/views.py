@@ -68,7 +68,7 @@ def index(request):
 
 
 # LoginRequiredMixin : 이 클래스를 상속하면 로그인이 필요해진다.
-class BookListView(generic.ListView):
+class BookListView(LoginRequiredMixin, generic.ListView):
     #  template 안에서 [model]_list 형태로 보여지게 된다.
     model = Book
     

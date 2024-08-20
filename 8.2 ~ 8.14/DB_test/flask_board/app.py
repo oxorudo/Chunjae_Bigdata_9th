@@ -87,6 +87,24 @@ def insert_board():
             cur.execute(sql, [title, content , user_id])
             conn.commit()
             return redirect(url_for('view_board'))
+        
+
+@app.route("/board/<int:board_id>", methods= ['POST'])
+def insert_comment(board_id):
+    sql = '''
+        INSERT INTO tb_board_comment(
+        board_id, comment, user_id
+        ) VALUES (
+        %s, %s, %s
+        )
+'''
+    user_id = session['user']['id']
+    comment = request.form['comment']
+    with db_connect() as conn:
+        with conn.cursor() as cur:
+            cur.execute(sql, [board_id, comment, user_id])
+            conn.commit()
+            return redirect(url_for('view_board_detail', board_id=board_id))
 
 
 # 게시판 상세 페이지

@@ -89,6 +89,7 @@ def insert_board():
             return redirect(url_for('view_board'))
         
 
+# 과제 : 댓글 기능 만들기
 @app.route("/board/<int:board_id>", methods= ['POST'])
 def insert_comment(board_id):
     sql = '''

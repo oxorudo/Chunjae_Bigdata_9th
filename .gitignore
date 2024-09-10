@@ -22,3 +22,4 @@ training_args.bin
 eval_results.json
 config.json
 all_results.json
+model.keras

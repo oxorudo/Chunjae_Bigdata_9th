@@ -23,4 +23,8 @@ eval_results.json
 config.json
 all_results.json
 model.keras
-trainer
+trainer 
+ebs_audio
+ebs
+khan
+ebs_script

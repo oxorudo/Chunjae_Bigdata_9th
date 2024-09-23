@@ -29,8 +29,9 @@ ebs
 khan
 ebs_script
 script_ebs
-logs
 results
 새 폴더
 best_model1.keras
 *.zip
+logs
+

@@ -44,7 +44,7 @@ josa_list = [
     '보다', '처럼', '같이', '만큼',
 
     # 기타 조사
-    '께', '께서', '라도', '야말로', '으로서', '으로써', '이야말로', '이나마', '하고는'
+    '께', '께서', '라도', '야말로', '으로서', '으로써', '이야말로', '이나마', '하고는', '마다'
 ]
 
 
@@ -114,13 +114,30 @@ def generate_pos_quiz():
     # 선택된 문장을 세션에 저장 (출제된 문장으로 기록)
     session['used_sentences'].append(sentence)
 
+    def correct_pos(doc):
+        for sent in doc.sentences:
+            for word in sent.words:
+            # '놀이공원'과 '주말'이 부사(ADV)로 태깅되었을 때 이를 명사(NOUN)로 수정
+                if word.text in ['놀이공원', '주말'] and word.upos == 'ADV':
+                    word.upos = 'NOUN'  # 명사로 태깅 수정
+                if word.text in ['가족'] and word.upos != 'NOUN':
+                    word.upos = 'NOUN'
+
     # Stanza를 사용한 형태소 분석
     doc = nlp(sentence)
-    morphemes = []
+
+    correct_pos(doc)
+
+    morphemes = [] # 단어와 품사를 넣는 리스트
+
     for sent in doc.sentences:  # sentence는 Stanza의 Sentence 객체이므로, JSON으로 변환 불가
         for word in sent.words:
             word_text = word.text
             pos = upos_to_korean.get(word.upos, word.upos)  # UPOS 태그를 한국어로 변환
+
+            # 구두점은 문제로 출제하지 않도록 필터링
+            if pos == '구두점':
+                continue
             
             # 조사 분리 후 어간과 조사를 처리
             stem, josa = separate_josa(word_text)
@@ -134,6 +151,7 @@ def generate_pos_quiz():
 
     # 오답 선택지로 쓸 랜덤한 태그 4개 생성 (정답을 제외하고)
     all_pos_tags = list(upos_to_korean.values()) + ['조사']  # '조사' 태그도 추가
+    all_pos_tags.remove('구두점') # 구두점이 선택지로 나오지 않게 제외
     all_pos_tags.remove(quiz_pos)  # 정답을 제외
     wrong_choices = random.sample(all_pos_tags, 4)
 
@@ -156,6 +174,19 @@ def index():
     session['start_time'] = time.time()
     return render_template('index.html')
 
+# 문장에서 문제로 나온 단어 밑줄 혹은 볼드 처리
+def highlight_word_in_sentence(sentence, quiz_word, highlight_type="underline"):
+    if highlight_type == "underline":
+        highlighted_word = f"<u>{quiz_word}</u>"  # 밑줄 처리
+    elif highlight_type == "bold":
+        highlighted_word = f"<b>{quiz_word}</b>"  # 볼드 처리
+    else:
+        highlighted_word = quiz_word  # 기본 처리
+    
+    # 주어진 문장에서 단어를 강조 처리된 단어로 대체
+    return sentence.replace(quiz_word, highlighted_word)
+
+
 @app.route('/question')
 def question():
     if session['total_questions'] >= 10:
@@ -165,7 +196,11 @@ def question():
     sentence, quiz_word, choices = generate_pos_quiz()
     total_questions = session['total_questions'] + 1
 
-    return render_template('question.html', sentence=sentence, quiz_word=quiz_word, choices=choices, total_questions=total_questions)
+    # 품사를 맞출 단어에 밑줄 처리
+    sentence_with_highlight = highlight_word_in_sentence(sentence, quiz_word, highlight_type="underline")
+
+    return render_template('question.html', sentence=sentence_with_highlight, quiz_word=quiz_word, choices=choices, total_questions=total_questions)
+
 
 @app.route('/check_answer', methods=['POST'])
 def check_answer():
@@ -243,4 +278,4 @@ def logs():
 if __name__ == '__main__':
     if not os.path.exists('logs'):
         os.makedirs('logs')
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')

@@ -9,7 +9,7 @@
     <div class="container">
         <h1>품사 맞추기 문제</h1>
         <p>{{ total_questions }}. 다음 문장에서 <strong>'{{ quiz_word }}'</strong>의 품사는 무엇일까요?</p>
-        <p>문장: {{ sentence }}</p>
+        <p>문장: {{ sentence|safe }}</p>
         <form action="{{ url_for('check_answer') }}" method="POST">
             <!-- 5지선다 객관식 선택지 -->
             <div class="choices">

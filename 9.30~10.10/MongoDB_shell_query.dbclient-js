@@ -1,0 +1,305 @@
+-- Active: 1728354346326@@127.0.0.1@27017@admin
+
+db('thing').collection('users').insertOne({
+    name:"sue",
+    age : 26,
+    status : "pending"
+});
+
+db('thing').collection('users').find({name : "sue"}).toArray();
+
+db('thing').collection('inventory').insertOne({
+  item: 'canvas',
+  qty: 100,
+  tags: ['cotton'],
+  size: { h: 28, w: 35.5, uom: 'cm' }
+});
+
+db('thing').collection('inventory').insertMany([
+  {
+    item: 'journal',
+    qty: 25,
+    tags: ['blank', 'red'],
+    size: { h: 14, w: 21, uom: 'cm' }
+  },
+  {
+    item: 'mat',
+    qty: 85,
+    tags: ['gray'],
+    size: { h: 27.9, w: 35.5, uom: 'cm' }
+  },
+  {
+    item: 'mousepad',
+    qty: 25,
+    tags: ['gel', 'blue'],
+    size: { h: 19, w: 22.85, uom: 'cm' }
+  }
+]);
+
+db('thing').collection('inventory').find({}).toArray();
+
+db('thing').collection('inventory').insertMany([
+   { item: "journal", qty: 25, size: { h: 14, w: 21, uom: "cm" }, status: "A" },
+   { item: "notebook", qty: 50, size: { h: 8.5, w: 11, uom: "in" }, status: "A" },
+   { item: "paper", qty: 100, size: { h: 8.5, w: 11, uom: "in" }, status: "D" },
+   { item: "planner", qty: 75, size: { h: 22.85, w: 30, uom: "cm" }, status: "D" },
+   { item: "postcard", qty: 45, size: { h: 10, w: 15.25, uom: "cm" }, status: "A" }
+]);
+
+db('thing').collection('inventory').find({}).toArray();
+
+db('thing').collection('inventory').find({status : "D"}).toArray();
+// status = D 인 열 찾음
+
+db('thing').collection('inventory').find({status : {$in : ["A", "D"]}}).toArray();
+// A나 D인 것을 찾음 (한가지 필드만 볼 때)
+
+db('thing').collection('inventory').find({
+    status : "A",
+    qty : {$lt : 30}
+}).toArray();
+// and와 같음, 두 가지 이상의 필드값을 가지고 찾을 때 사용
+
+db('thing').collection('inventory').find({ $or : 
+    [
+        {status : "A"},
+        {qty : {$lt : 30}}
+    ]
+}).toArray();
+// or와 같음
+
+db('thing').collection('inventory').find({
+    status : "A",
+    $or:[
+        {qty : {$lt : 30}},
+        {item : {$regex : '^p'}}
+    ]
+}).toArray();
+// and, or 같이 쓰기
+
+db('thing').collection('inventory').find({
+    "size.uom" : "in"
+}).toArray();
+// 사이즈 안의 스트링 값 안의 uom이라는 키를 참조해서 그 밸류가 인치인 것을 찾기
+
+db('thing').collection('inventory').find({
+    "size.h" : {$lt : 15}
+}).toArray();
+
+db('thing').collection('inventory').find({
+    "size.h" : {$lt : 15},
+    "size.uom" : "in",
+    "status" : "D"
+}).toArray();
+
+db('thing').collection('inventory').find({
+    size: { h: 14, w: 21, uom: "cm" } 
+}).toArray();
+// 쿼리 입력할 때 값들의 순서가 중요하다.
+
+db('thing').collection('inventory').find({ size: { w: 21, h: 14, uom: "cm" } }).toArray();
+// 위와 달리 w, h, uom 순으로 입력해서 결과가 나오지 않는다.
+
+db('thing').collection('inventory').insertMany([
+       { item: "journal", qty: 25, tags: ["blank", "red"], dim_cm: [ 14, 21 ] },
+   { item: "notebook", qty: 50, tags: ["red", "blank"], dim_cm: [ 14, 21 ] },
+   { item: "paper", qty: 100, tags: ["red", "blank", "plain"], dim_cm: [ 14, 21 ] },
+   { item: "planner", qty: 75, tags: ["blank", "red"], dim_cm: [ 22.85, 30 ] },
+   { item: "postcard", qty: 45, tags: ["blue"], dim_cm: [ 10, 15.25 ] }
+]);
+
+db('thing').collection('inventory').find({}).toArray();
+
+db('thing').collection('inventory').find({
+    tags : ['red', 'blank']
+}).toArray();
+// 입력한 쿼리에 배열 요소의 순서가 반영됨
+
+db('thing').collection('inventory').find({
+    tags : {$all :['red', 'blank']}
+}).toArray();
+// 배열의 요소가 있기만 하면 모두 반환하려면 $all 사용
+
+db('thing').collection('inventory').find({
+    tags : "red"
+}).toArray();
+// red를 가진 tags를 가진 행들 탐색
+
+db('thing').collection('inventory').find({
+    dim_cm:{
+        $gt : 25
+    }
+}).toArray();
+// dim_cm이 25 초과인 것들 탐색
+
+db('thing').collection('inventory').find({
+    dim_cm : {$gt : 15, $lt : 20}
+}).toArray();
+// 15 < dim_cm 이거나 dim_cm < 20인 요소가 있는 것을 찾음
+
+db('thing').collection('inventory').find({
+    dim_cm : {
+        $elemMatch : {$gt: 22, $lt : 30}
+    }
+}).toArray();
+// 22 < dim_cm < 30인  요소가 하나 이상인 행 찾음
+
+db('thing').collection('inventory').find({
+    "dim_cm.1" : {$gt : 25}
+}).toArray();
+// dim_cm 배열의 두 번째 요소가 25 초과인 행을 찾음
+
+db('thing').collection('inventory').find({
+    "tags" : {$size : 3}
+}).toArray();
+
+db('thing').collection('inventory').insertMany( [
+   { item: "journal", instock: [ { warehouse: "A", qty: 5 }, { warehouse: "C", qty: 15 } ] },
+   { item: "notebook", instock: [ { warehouse: "C", qty: 5 } ] },
+   { item: "paper", instock: [ { warehouse: "A", qty: 60 }, { warehouse: "B", qty: 15 } ] },
+   { item: "planner", instock: [ { warehouse: "A", qty: 40 }, { warehouse: "B", qty: 5 } ] },
+   { item: "postcard", instock: [ { warehouse: "B", qty: 15 }, { warehouse: "C", qty: 35 } ] }
+]);
+
+db('thing').collection('inventory').find({
+    instock : {warehouse : "A", qty : 5}
+}).toArray();
+// instock 배열의 요소가 일치하는 모든 행 찾음
+// 배열의 요소의 순서가 바뀌면 일치하지 않는 것으로 함
+
+db('thing').collection('inventory').find({
+    "instock.qty": {$lte : 20}
+}).toArray();
+// qty가 20보다 작거나 같은 경우 찾음
+
+db('thing').collection('inventory').find({
+    "instock.0.qty" : {$lte : 20}
+}).toArray();
+// instock의 첫번째 딕셔너리에서 qty가 20 이하인 경우 찾음
+
+db('thing').collection('inventory').find({
+    "instock" : {$elemMatch : {qty : 5, warehouse : "A"}}
+}).toArray();
+// qty가 5고 warehouse가 A인 instock를 찾음.
+
+db('thing').collection('inventory').find({
+    instock : {$elemMatch : {qty : {$gt : 10, $lte : 20}}}
+}).toArray();
+// 10 < qty <=20 을 만족하는 instock 찾음
+
+db('thing').collection('inventory').find({
+    "instock.qty" : {
+        $gt : 10, $lte : 20
+    }
+}).toArray();
+// 10 < qty이거나 qty <= 20 인 것을 elemmatch 없이 찾음
+
+db('thing').collection('inventory').find( { "instock.qty": 5, "instock.warehouse": "A" } ).toArray();
+
+db('thing').collection('students').insertMany( [
+   { _id: 1, test1: 95, test2: 92, test3: 90, modified: new Date("01/05/2020") },
+   { _id: 2, test1: 98, test2: 100, test3: 102, modified: new Date("01/05/2020") },
+   { _id: 3, test1: 95, test2: 110, modified: new Date("01/04/2020") }
+] )
+
+db('thing').collection('students').updateOne(
+ { _id: 3 }, [ { $set: { "test3": 98, modified: "$$NOW"} } ] 
+);
+
+db('thing').collection('students2').insertMany( [
+      { "_id" : 1, quiz1: 8, test2: 100, quiz2: 9, modified: new Date("01/05/2020") },
+   { "_id" : 2, quiz2: 5, test1: 80, test2: 89, modified: new Date("01/05/2020") },
+] );
+
+db('thing').collection('students2').find({}).toArray();
+
+db('thing').collection('students2').updateMany( {},
+    [
+    { $replaceRoot: { newRoot:
+       { $mergeObjects: [ { quiz1: 0, quiz2: 0, test1: 0, test2: 0 }, "$$ROOT" ] }
+    } },
+    { $set: { modified: "$$NOW"}  }
+  ]
+);
+
+db('thing').collection('students3').insertMany([
+   { "_id" : 1, "tests" : [ 95, 92, 90 ], "modified" : ISODate("2019-01-01T00:00:00Z") },
+   { "_id" : 2, "tests" : [ 94, 88, 90 ], "modified" : ISODate("2019-01-01T00:00:00Z") },
+   { "_id" : 3, "tests" : [ 70, 75, 82 ], "modified" : ISODate("2019-01-01T00:00:00Z") }
+]);
+
+db('thing').collection('students3').find({}).toArray();
+
+db('thing').collection('students3').deleteMany({});
+// {}안의 조건을 가진 내용 다 지우기.
+
+db('thing').collection('inventory2').insertMany([
+  {
+    item: 'canvas',
+    qty: 100,
+    size: { h: 28, w: 35.5, uom: 'cm' },
+    status: 'A'
+  },
+  {
+    item: 'journal',
+    qty: 25,
+    size: { h: 14, w: 21, uom: 'cm' },
+    status: 'A'
+  },
+  {
+    item: 'mat',
+    qty: 85,
+    size: { h: 27.9, w: 35.5, uom: 'cm' },
+    status: 'A'
+  },
+  {
+    item: 'mousepad',
+    qty: 25,
+    size: { h: 19, w: 22.85, uom: 'cm' },
+    status: 'P'
+  },
+  {
+    item: 'notebook',
+    qty: 50,
+    size: { h: 8.5, w: 11, uom: 'in' },
+    status: 'P'
+  },
+  {
+    item: 'paper',
+    qty: 100,
+    size: { h: 8.5, w: 11, uom: 'in' },
+    status: 'D'
+  },
+  {
+    item: 'planner',
+    qty: 75,
+    size: { h: 22.85, w: 30, uom: 'cm' },
+    status: 'D'
+  },
+  {
+    item: 'postcard',
+    qty: 45,
+    size: { h: 10, w: 15.25, uom: 'cm' },
+    status: 'A'
+  },
+  {
+    item: 'sketchbook',
+    qty: 80,
+    size: { h: 14, w: 21, uom: 'cm' },
+    status: 'A'
+  },
+  {
+    item: 'sketch pad',
+    qty: 95,
+    size: { h: 22.85, w: 30.5, uom: 'cm' },
+    status: 'A'
+  }
+]);
+
+db('thing').collection('inventory2').deleteMany({status : "A"});
+// 조건에 맞는 요소 다 지움.
+
+db('thing').collection('inventory2').find({}).toArray();
+
+db('thing').collection('inventory2').deleteOne({status : "D"});
+// 조건에 맞는 행 하나 지움.

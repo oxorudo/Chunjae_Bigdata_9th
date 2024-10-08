@@ -5,7 +5,7 @@ filtered_member AS ( -- 사용자의 아이디와 학년 매칭
     SELECT
         userid,
         grade
-    FROM e_member
+    FROM text_biz_dw.e_member
     WHERE grade BETWEEN 3 AND 6 -- 3학년 ~ 6학년 대상으로만 제한
 ),
 who_studied AS ( -- 위에서 설정한 분기 동안에 학습한 사용자만 필터링하고 사용자가 즐긴 콘텐츠와 사용 시간 산출
@@ -13,7 +13,7 @@ who_studied AS ( -- 위에서 설정한 분기 동안에 학습한 사용자만 
         s.userid, -- 학습한 사용자만 선택하기 위해 e_study의 userid 사용
         s.mcode,
         ABS(DATE_DIFF('hour', s.enddate, s.credate)) AS study_hours -- 학습 시작 시간과 끝난 시간의 차이를 구함. 시간은 양수값이므로 절댓값을 취함
-    FROM e_study AS s 
+    FROM text_biz_dw.e_study AS s 
     INNER JOIN filtered_member AS fm ON s.userid = fm.userid
     INNER JOIN quarter_input AS qi ON qi.selected_quarter = CASE  -- 월 데이터에 따라 분기 분류해서 일치하는 분기만 추출
             WHEN s.mm IN ('01', '02', '03') THEN '1'
@@ -27,8 +27,8 @@ who_studied AS ( -- 위에서 설정한 분기 동안에 학습한 사용자만 
 common_mcode AS ( -- 미디어와 테스트 둘 다 제공하는 콘텐츠만 필터링
     SELECT
         DISTINCT t.mcode
-    FROM e_media AS m
-    INNER JOIN e_test AS t ON m.mcode = t.mcode -- 미디어와 테스트에 둘 다 존재하는 mcode만을 선택
+    FROM text_biz_dw.e_media AS m
+    INNER JOIN text_biz_dw.e_test AS t ON m.mcode = t.mcode -- 미디어와 테스트에 둘 다 존재하는 mcode만을 선택
 ),
 temp AS ( -- 필터링한 콘텐츠 중에서 콘텐츠 별 사용자 수와 학습 시간 합 구하기
     SELECT
@@ -45,7 +45,7 @@ testscores AS ( -- 문항 수와 정답 수 평균, 점수 평균 구하기
         AVG(item_count) AS avg_item_count, -- 문항 수의 평균
         AVG(correct_count) AS avg_correct_count, -- 정답 문항 수의 평균
         AVG(score) AS avg_score -- 점수 평균
-    FROM e_test
+    FROM text_biz_dw.e_test
     WHERE mcode IN (SELECT mcode FROM common_mcode) -- 미디어와 테스트에 둘 다 존재하는 mcode 선택(위의 temp와 다름)
     GROUP BY mcode
 ),
@@ -53,8 +53,8 @@ usergrades AS ( -- 콘텐츠 사용자들의 학년 평균 구하기
     SELECT
         s.mcode,
         AVG(m.grade) AS avg_grade -- 사용자 학년 평균
-    FROM e_study AS s
-    INNER JOIN e_member AS m ON s.userid = m.userid -- 학습 이용자로 대상 제한
+    FROM text_biz_dw.e_study AS s
+    INNER JOIN text_biz_dw.e_member AS m ON s.userid = m.userid -- 학습 이용자로 대상 제한
     WHERE m.grade BETWEEN 3 AND 6
         AND s.mcode IN (SELECT mcode FROM common_mcode) -- 미디어와 테스트에 둘 다 존재하는 mcode 선택
     GROUP BY s.mcode

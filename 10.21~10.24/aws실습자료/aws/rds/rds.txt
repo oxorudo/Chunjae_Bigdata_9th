@@ -1,0 +1,31 @@
+인스턴스에서 rds mysql 접속
+
+# mysql 클라이언트 설치
+sudo apt install mysql-client-core-8.0
+
+# mysql 접속 
+mysql -h aws엔드포인트 -u 유저이름 -p
+
+# 접속 후
+# 데이터 베이스 확인
+mysql> show databases;
+
+# 데이터 베이스 만들기
+create database db이름;
+
+# 데이터 베이스 사용하기
+use db이름;
+
+# 테이블 확인 
+show tables;
+
+# 테이블 만들기 
+CREATE TABLE test_table (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL);
+
+# 나가기
+exit; 
+
+
+# db 설정 main.py 반영
+def get_db_connection(): 함수에 db 정보 기입 
+host, user, password, database

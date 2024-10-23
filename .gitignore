@@ -35,3 +35,4 @@ best_model1.keras
 *.zip
 logs
 Noto_Sans_KR
+.env

@@ -36,3 +36,6 @@ best_model1.keras
 logs
 Noto_Sans_KR
 .env
+.csv
+__pycache__
+dataset

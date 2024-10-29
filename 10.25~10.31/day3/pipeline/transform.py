@@ -4,7 +4,7 @@ def transformer(temp_path, batch_date, df, table_name):
     path = create_path(temp_path, batch_date, table_name)
     res = save_to_file(df, path, table_name)
 
-    return df
+    return res
 
 
 

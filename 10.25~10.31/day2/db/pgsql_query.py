@@ -1,4 +1,4 @@
 queries = {
     'lecture' : 'select * from lecture',
-    'tbl' : 'select * from tbl limit 5'
+    # 'tbl' : 'select * from tbl limit 5'
 }

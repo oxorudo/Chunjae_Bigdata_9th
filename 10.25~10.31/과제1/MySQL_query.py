@@ -1,4 +1,4 @@
-import mysql.connector  # MySQL Connector 추가
+import pymysql  # MySQL Connector 추가
 import psycopg2  # PostgreSQL 용
 import db.pgsql_query as postgresql_query
 from sqlalchemy import create_engine
@@ -10,23 +10,17 @@ class DBconnector:
         self.orm_engine = orm_engine
         self.conn_params = dict(
             host=host,
-            dbname=database,
+            database=database,
             user=user,
             password=password,
-            port=port
+            port=int(port)
         )
-        self.orm_conn_params = f"{orm_engine}://{user}:{password}@{host}:{port}/{database}"
+        self.orm_conn_params = f"{orm_engine}+pymysql://{user}:{password}@{host}:{port}/{database}"
         self.orm_connect()
         # PostgreSQL 연결 처리
-        if self.engine == 'postgresql':
-            self.connect = self.postgres_connect()
-            self.queries = postgresql_query.queries
-        # MySQL 연결 처리 추가
-        elif self.engine == 'mysql':
+        if self.engine == 'mysql':
             self.connect = self.mysql_connect()
-            # MySQL 전용 쿼리 파일 생성 후 import 필요
-            # import db.mysql_query as mysql_query
-            # self.queries = mysql_query.queries
+            self.queries = postgresql_query.queries
     def __enter__(self):
         print("Enter")
         return self
@@ -35,13 +29,13 @@ class DBconnector:
         print("Exit")
     def orm_connect(self):
         self.orm_conn = create_engine(self.orm_conn_params)
-    # PostgreSQL 연결 함수
-    def postgres_connect(self):
+    # mysql 연결 함수
+    def mysql_connect(self):
         self.conn = psycopg2.connect(**self.conn_params)
         return self
     # MySQL 연결 함수 추가
     def mysql_connect(self):
-        self.conn = mysql.connector.connect(**self.conn_params)
+        self.conn = pymysql.connect(**self.conn_params)
         return self
     # 쿼리 가져오기 함수
     def get_query(self, table_name):

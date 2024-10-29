@@ -1,6 +1,6 @@
 import os
 
-TEMP_PATH = 'd:\\workspace\\Chunjae_Bigdata_9th\\10.25~10.31\\day2\\temp_storage'
+TEMP_PATH = 'd:\\workspace\\Chunjae_Bigdata_9th\\10.25~10.31\\day3\\temp_storage'
 
 DB_SETTINGS = {
     "POSTGRES": {
@@ -13,8 +13,6 @@ DB_SETTINGS = {
         'port': os.getenv("POSTGRES_PORT")
     },
     "MYSQL": {
-        'engine' : os.getenv('MYSQL_ENGINE'),
-        'orm_engine' : os.getenv('MYSQL_ENGINE'),
         'host': os.getenv("MYSQL_HOST"),
         'database': os.getenv("MYSQL_DB_2"),
         'user': os.getenv("MYSQL_USER"),

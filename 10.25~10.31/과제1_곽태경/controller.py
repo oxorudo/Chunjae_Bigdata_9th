@@ -16,13 +16,13 @@ def controller(batch_date):
         db_obj = DBConnector(**DB_SETTINGS['MYSQL'])
 
         pandas_df = extractor(db_obj, table_name)
-        print(pandas_df,"======================================================")
+
 
         if len(pandas_df) > 0:
 
             res = transformer(TEMP_PATH, batch_date, pandas_df, table_name)
 
-            if res:
+            if res is not None and not res.empty:
                 db_connector = DBConnector(**DB_SETTINGS['MYSQL'])
                 loader(db_connector, pandas_df, table_name)
 

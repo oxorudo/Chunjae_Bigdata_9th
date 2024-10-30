@@ -24,7 +24,7 @@ def start(batch_date: str) -> None:
 
         # fake dataframe -> postgresql 저장
         insert_fakedataframe(fake_df)
-        # controller(batch_date)
+        controller(batch_date)
 
         time.sleep(3)
 

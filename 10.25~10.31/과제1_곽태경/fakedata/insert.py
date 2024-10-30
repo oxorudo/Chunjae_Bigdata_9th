@@ -5,7 +5,6 @@ from settings import DB_SETTINGS
 
 def insert_fakedataframe(df: pd.DataFrame) -> bool:
     db_connector = DBConnector(**DB_SETTINGS['MYSQL'])
-    print(db_connector)
 
     with db_connector as connected:
         try:

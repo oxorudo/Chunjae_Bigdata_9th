@@ -20,14 +20,14 @@
     {
         "단어": "doctor",
         "단어 뜻": "의사",
-        "예문": "Ann is a doctor. Ann은 의사야.",
-        "예문 뜻": ""
+        "예문": "Ann is a doctor.",
+        "예문 뜻": "Ann은 의사야."
     },
     {
         "단어": "fire fighter",
         "단어 뜻": "소방관",
-        "예문": "Tom is a fire fighter. Tom은 소방관이야.",
-        "예문 뜻": ""
+        "예문": "Tom is a fire fighter.",
+        "예문 뜻": "Tom은 소방관이야."
     },
     {
         "단어": "nurse",
@@ -344,8 +344,8 @@
     {
         "단어": "T-shirt",
         "단어 뜻": "티셔츠",
-        "예문": "I have a white T-shirt. 나는 흰색 티셔츠가 있어.",
-        "예문 뜻": ""
+        "예문": "I have a white T-shirt.",
+        "예문 뜻": "나는 흰색 티셔츠가 있어."
     },
     {
         "단어": "vest",
@@ -650,14 +650,14 @@
     {
         "단어": "nineteen",
         "단어 뜻": "19, 열아홉",
-        "예문": "Kevin is nineteen years old. Kevin은 열아홉 살이야.",
-        "예문 뜻": ""
+        "예문": "Kevin is nineteen years old.",
+        "예문 뜻": "Kevin은 열아홉 살이야."
     },
     {
         "단어": "twenty",
         "단어 뜻": "20, 스물",
-        "예문": "Becky is twenty years old. Becky는 스무 살이야.",
-        "예문 뜻": ""
+        "예문": "Becky is twenty years old.",
+        "예문 뜻": "Becky는 스무 살이야."
     },
     {
         "단어": "weather",
@@ -919,7 +919,7 @@
     },
     {
         "단어": "play",
-        "단어 뜻": "(게임, 놀이등\n을) 하다",
+        "단어 뜻": "(게임, 놀이등 을) 하다",
         "예문": "Do you play soccer?",
         "예문 뜻": "너는 축구를 하니?"
     },
@@ -992,8 +992,8 @@
     {
         "단어": "o’clock",
         "단어 뜻": "(정각) ~시",
-        "예문": "It’s three o’clock. 3시야.",
-        "예문 뜻": ""
+        "예문": "It’s three o’clock.",
+        "예문 뜻": "3시야."
     },
     {
         "단어": "now",
@@ -1158,7 +1158,7 @@
         "예문 뜻": "그 소방서는 커."
     },
     {
-        "단어": "police\nstation",
+        "단어": "police station",
         "단어 뜻": "경찰서",
         "예문": "The police station is big.",
         "예문 뜻": "그 경찰서는 커."
@@ -1176,7 +1176,7 @@
         "예문 뜻": "식당에 가자."
     },
     {
-        "단어": "subway\nstation",
+        "단어": "subway station",
         "단어 뜻": "지하철역",
         "예문": "Let’ go to the subway station.",
         "예문 뜻": "지하철역에 가자."
@@ -1226,8 +1226,8 @@
     {
         "단어": "ping-pong",
         "단어 뜻": "탁구",
-        "예문": "We are playing ping-pong. 우리는 탁구를 치고 있어.",
-        "예문 뜻": ""
+        "예문": "We are playing ping-pong.",
+        "예문 뜻": "우리는 탁구를 치고 있어."
     },
     {
         "단어": "skiing",
@@ -1260,7 +1260,7 @@
         "예문 뜻": "배구를 하자."
     },
     {
-        "단어": "computer\ngame",
+        "단어": "computer game",
         "단어 뜻": "컴퓨터 게임",
         "예문": "We play computer games.",
         "예문 뜻": "우리는 컴퓨터 게임을 해."

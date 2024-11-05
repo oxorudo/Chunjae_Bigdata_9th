@@ -1,0 +1,1442 @@
+[
+    {
+        "단어": "brush",
+        "단어 뜻": "동사) (머리를)\n빗다",
+        "예문": "You must brush your hair every day.",
+        "예문 뜻": "너는 매일 머리를 빗어야 해."
+    },
+    {
+        "단어": "hello",
+        "단어 뜻": "감탄사) 여보세\n요",
+        "예문": "Hello?",
+        "예문 뜻": "여보세요?"
+    },
+    {
+        "단어": "helmet",
+        "단어 뜻": "명사) 헬멧",
+        "예문": "You must wear your helmet.",
+        "예문 뜻": "너는 헬멧을 써야 해."
+    },
+    {
+        "단어": "hold on",
+        "단어 뜻": "기다리다",
+        "예문": "Hold on, please.",
+        "예문 뜻": "잠시만 기다려 주세요."
+    },
+    {
+        "단어": "line",
+        "단어 뜻": "명사) 줄",
+        "예문": "You must stand in line at a bus stop.",
+        "예문 뜻": "너는 버스 정류장에서 줄을 서야 해."
+    },
+    {
+        "단어": "number",
+        "단어 뜻": "명사) 번호",
+        "예문": "You have the wrong number.",
+        "예문 뜻": "전화를 잘못 거셨습니다."
+    },
+    {
+        "단어": "phone",
+        "단어 뜻": "명사) 전화",
+        "예문": "Can you get the phone for me?",
+        "예문 뜻": "전화 좀 대신 받아 주실래요?"
+    },
+    {
+        "단어": "quiet",
+        "단어 뜻": "형용사) 조용한",
+        "예문": "You must be quiet in the library.",
+        "예문 뜻": "너는 도서관에서는 조용히 해야 해."
+    },
+    {
+        "단어": "speak",
+        "단어 뜻": "동사) 통화하다",
+        "예문": "May I speak to Yuna?",
+        "예문 뜻": "유나와 통화할 수 있을까요?"
+    },
+    {
+        "단어": "watch out",
+        "단어 뜻": "조심하다",
+        "예문": "You must watch out for cars.",
+        "예문 뜻": "너는 자동차를 조심해야 해."
+    },
+    {
+        "단어": "garden",
+        "단어 뜻": "명사) 정원",
+        "예문": "There is a garden in my house.",
+        "예문 뜻": "우리 집에는 정원이 있어."
+    },
+    {
+        "단어": "inside",
+        "단어 뜻": "부사) 안에, 안으\n로",
+        "예문": "Tim and his dog are inside the room.",
+        "예문 뜻": "Tim과 그의 개는 방 안에 있어."
+    },
+    {
+        "단어": "sink",
+        "단어 뜻": "명사) 싱크대",
+        "예문": "There are many dishes in the sink.",
+        "예문 뜻": "싱크대 안에 접시가 많이 있어."
+    },
+    {
+        "단어": "soap",
+        "단어 뜻": "명사) 비누",
+        "예문": "There is soap in the bathroom.",
+        "예문 뜻": "욕실에는 비누가 있어."
+    },
+    {
+        "단어": "stove",
+        "단어 뜻": "명사) 가스레인\n지",
+        "예문": "There is a stove in the kitchen.",
+        "예문 뜻": "부엌에는 가스레인지가 있어."
+    },
+    {
+        "단어": "surprise",
+        "단어 뜻": "명사) 놀람",
+        "예문": "What a surprise!",
+        "예문 뜻": "놀랍다!"
+    },
+    {
+        "단어": "toilet",
+        "단어 뜻": "명사) 변기",
+        "예문": "There is a toilet in the bathroom.",
+        "예문 뜻": "욕실에는 변기가 있어."
+    },
+    {
+        "단어": "toothbrush",
+        "단어 뜻": "명사) 칫솔",
+        "예문": "There is a toothbrush in the bathroom.",
+        "예문 뜻": "욕실에는 칫솔이 있어."
+    },
+    {
+        "단어": "toothpaste",
+        "단어 뜻": "명사) 치약",
+        "예문": "There is toothpaste in the bathroom.",
+        "예문 뜻": "욕실에는 치약이 있어."
+    },
+    {
+        "단어": "welcome",
+        "단어 뜻": "동사) 환영하다",
+        "예문": "Welcome to my house.",
+        "예문 뜻": "우리 집에 온 것을 환영해."
+    },
+    {
+        "단어": "answer",
+        "단어 뜻": "동사) 대답하다",
+        "예문": "You have to answer my questions.",
+        "예문 뜻": "너는 내 질문들에 대답해야 해."
+    },
+    {
+        "단어": "ask",
+        "단어 뜻": "동사) 묻다",
+        "예문": "May I ask you a question?",
+        "예문 뜻": "질문 하나 해도 될까?"
+    },
+    {
+        "단어": "fire",
+        "단어 뜻": "명사) 불",
+        "예문": "We must watch out for fire.",
+        "예문 뜻": "우리는 불을 조심해야 해."
+    },
+    {
+        "단어": "know",
+        "단어 뜻": "동사) 알다",
+        "예문": "I know the answer.",
+        "예문 뜻": "나는 그 답을 알아."
+    },
+    {
+        "단어": "leave",
+        "단어 뜻": "동사) 남가다",
+        "예문": "I must leave a flower for him.",
+        "예문 뜻": "나는 그를 위해 꽃 한 송이를 남겨야 해."
+    },
+    {
+        "단어": "must",
+        "단어 뜻": "동사) ~해야 하\n다",
+        "예문": "You must wake up!",
+        "예문 뜻": "너는 일어나야 해!"
+    },
+    {
+        "단어": "question",
+        "단어 뜻": "명사) 질문",
+        "예문": "I have some questions.",
+        "예문 뜻": "몇 가지 질문이 있어요."
+    },
+    {
+        "단어": "study",
+        "단어 뜻": "동사) 공부하다",
+        "예문": "I must study English.",
+        "예문 뜻": "나는 영어 공부를 해야 해."
+    },
+    {
+        "단어": "take care",
+        "단어 뜻": "안녕, 잘 가",
+        "예문": "Take care.",
+        "예문 뜻": "안녕, 잘 가."
+    },
+    {
+        "단어": "word",
+        "단어 뜻": "명사) 단어",
+        "예문": "I can spell many English words.",
+        "예문 뜻": "나는 많은 영어 단어의 철자를 말할 수 있어."
+    },
+    {
+        "단어": "building",
+        "단어 뜻": "명사) 건물",
+        "예문": "There are many building in the city.",
+        "예문 뜻": "도시에는 많은 건물들이 있어."
+    },
+    {
+        "단어": "cousin",
+        "단어 뜻": "명사) 사촌",
+        "예문": "They are my cousins.",
+        "예문 뜻": "그들은 내 사촌들이야."
+    },
+    {
+        "단어": "duck",
+        "단어 뜻": "명사) 오리",
+        "예문": "This is a baby duck.",
+        "예문 뜻": "이것은 새끼 오리야."
+    },
+    {
+        "단어": "goat",
+        "단어 뜻": "명사) 염소",
+        "예문": "This goat is black.",
+        "예문 뜻": "이 염소는 검은색이야."
+    },
+    {
+        "단어": "handsome",
+        "단어 뜻": "형용사) 잘생긴",
+        "예문": "Tony is handsome.",
+        "예문 뜻": "Tony는 잘생겼어."
+    },
+    {
+        "단어": "horse",
+        "단어 뜻": "명사) 말",
+        "예문": "This horse is brown.",
+        "예문 뜻": "이 말은 갈색이야."
+    },
+    {
+        "단어": "lovely",
+        "단어 뜻": "형용사) 사랑스\n러운",
+        "예문": "Jenny is so lovely.",
+        "예문 뜻": "Jenny는 무척 사랑스러워."
+    },
+    {
+        "단어": "sheep",
+        "단어 뜻": "명사) 양",
+        "예문": "The sheep looks cute.",
+        "예문 뜻": "그 양은 귀여워 보여."
+    },
+    {
+        "단어": "smile",
+        "단어 뜻": "명사) 미소",
+        "예문": "Justin has a lovely smile.",
+        "예문 뜻": "Justin은 사랑스러운 미소를 가지고 있어."
+    },
+    {
+        "단어": "year",
+        "단어 뜻": "명사) ~살",
+        "예문": "Jenny is six years old.",
+        "예문 뜻": "Jenny는 여섯 살이야."
+    },
+    {
+        "단어": "busy",
+        "단어 뜻": "형용사) 바쁜",
+        "예문": "They are very busy.",
+        "예문 뜻": "그들은 매우 바빠."
+    },
+    {
+        "단어": "driver",
+        "단어 뜻": "명사) 운전기사",
+        "예문": "Ryan’s father is a driver.",
+        "예문 뜻": "Ryan의 아버지는 운전기사야."
+    },
+    {
+        "단어": "during",
+        "단어 뜻": "전치사) ~동안",
+        "예문": "What will you do during this holiday?",
+        "예문 뜻": "너는 이번 휴가 동안 무엇을 할 거니?"
+    },
+    {
+        "단어": "farmer",
+        "단어 뜻": "명사) 농부",
+        "예문": "Uncle Bob is a farmer.",
+        "예문 뜻": "Bob 삼촌은 농부셔."
+    },
+    {
+        "단어": "fire fighter",
+        "단어 뜻": "명사) 소방관",
+        "예문": "My father is a fire fighter.",
+        "예문 뜻": "우리 아버지는 소방관이야."
+    },
+    {
+        "단어": "fun",
+        "단어 뜻": "명사) 재미",
+        "예문": "We had fun at the beach.",
+        "예문 뜻": "우리는 해변에서 재미있었어."
+    },
+    {
+        "단어": "island",
+        "단어 뜻": "명사) 섬",
+        "예문": "Let’s go fishing on the island.",
+        "예문 뜻": "그 섬에 낚시를 하러 가자."
+    },
+    {
+        "단어": "mountain",
+        "단어 뜻": "명사) 산",
+        "예문": "Let’s go hiking on the mountain.",
+        "예문 뜻": "그 산에 하이킹을 하러 가자."
+    },
+    {
+        "단어": "police officer",
+        "단어 뜻": "명사) 경찰관",
+        "예문": "Ryan’s mother is a police officer.",
+        "예문 뜻": "Ryan의 어머니는 경찰관이야."
+    },
+    {
+        "단어": "vacation",
+        "단어 뜻": "명사) 방학",
+        "예문": "I enjoyed swimming with my family during my vacation.",
+        "예문 뜻": "나는 방학 동안 가족과 함께 수영을 즐겼어."
+    },
+    {
+        "단어": "boots",
+        "단어 뜻": "명사) 부츠",
+        "예문": "I’m looking for boots.",
+        "예문 뜻": "나는 부츠를 찾고 있어요."
+    },
+    {
+        "단어": "cheap",
+        "단어 뜻": "형용사) 값이 싼",
+        "예문": "This pencil case is cheap.",
+        "예문 뜻": "이 필통은 값이 싸요."
+    },
+    {
+        "단어": "expensive",
+        "단어 뜻": "형용사) 값비싼",
+        "예문": "This teddy bear is too expensive.",
+        "예문 뜻": "이 곰 인형은 너무 비싸요."
+    },
+    {
+        "단어": "jeans",
+        "단어 뜻": "명사) 청바지",
+        "예문": "I’m looking for jeans.",
+        "예문 뜻": "나는 청바지를 찾고 있어요."
+    },
+    {
+        "단어": "purple",
+        "단어 뜻": "명사) 보라색",
+        "예문": "I like purple.",
+        "예문 뜻": "나는 보라색이 좋아요."
+    },
+    {
+        "단어": "sale",
+        "단어 뜻": "명사) 세일, 특매",
+        "예문": "Those books are on sale.",
+        "예문 뜻": "저 책들은 세일 중이에요."
+    },
+    {
+        "단어": "sandals",
+        "단어 뜻": "명사) 샌들",
+        "예문": "I’m looking for sneakers.",
+        "예문 뜻": "나는 운동화를 찾고 있어요."
+    },
+    {
+        "단어": "size",
+        "단어 뜻": "명사) 크기",
+        "예문": "What size do you want?",
+        "예문 뜻": "어떤 치수를 원하세요?"
+    },
+    {
+        "단어": "sneakers",
+        "단어 뜻": "명사) 운동화",
+        "예문": "I’m looking for sneakers.",
+        "예문 뜻": "나는 운동화를 찾고 있어요."
+    },
+    {
+        "단어": "sunglasses",
+        "단어 뜻": "명사) 선글라스",
+        "예문": "I’m looking for sunglasses.",
+        "예문 뜻": "나는 선글라스를 찾고 있어요."
+    },
+    {
+        "단어": "always",
+        "단어 뜻": "부사) 늘, 항상",
+        "예문": "Time is always too fast for me.",
+        "예문 뜻": "나는 늘 시간이 너무 빨리 가."
+    },
+    {
+        "단어": "end",
+        "단어 뜻": "동사) 끝나다",
+        "예문": "The boring movie ended finally.",
+        "예문 뜻": "그 지겨운 영화가 마침내 끝났어."
+    },
+    {
+        "단어": "every",
+        "단어 뜻": "형용사) 모든",
+        "예문": "They run to me after school every day.",
+        "예문 뜻": "그들은 매일 방과 후에 나에게 달려와."
+    },
+    {
+        "단어": "go up",
+        "단어 뜻": "오르다",
+        "예문": "A man is going up the stairs.",
+        "예문 뜻": "한 남자가 계단을 오르고 있어."
+    },
+    {
+        "단어": "live",
+        "단어 뜻": "동사) 살다",
+        "예문": "Baby birds live in the nest.",
+        "예문 뜻": "아기 새들은 둥지에 살아."
+    },
+    {
+        "단어": "put",
+        "단어 뜻": "동사) 놓다",
+        "예문": "He is putting the ball on the green.",
+        "예문 뜻": "그는 잔디 위에 공을 놓고 있어."
+    },
+    {
+        "단어": "start",
+        "단어 뜻": "동사) 시작하다",
+        "예문": "He starts to run the race.",
+        "예문 뜻": "그는 경주를 시작해."
+    },
+    {
+        "단어": "stick",
+        "단어 뜻": "명사) 채, 막대기",
+        "예문": "Hockey players use this stick.",
+        "예문 뜻": "하키 선수들은 이 채를 사용해."
+    },
+    {
+        "단어": "then",
+        "단어 뜻": "부사) 그 다음에",
+        "예문": "Then, what piece should I move?",
+        "예문 뜻": "그 다음에 나는 무슨 말을 옮겨야 할까?"
+    },
+    {
+        "단어": "thing",
+        "단어 뜻": "명사) 물건",
+        "예문": "My puppy takes my things to play with.",
+        "예문 뜻": "우리 강아지는 가지고 놀려고 내 물건을 가져가."
+    },
+    {
+        "단어": "address",
+        "단어 뜻": "명사) 주소",
+        "예문": "This is my home address.",
+        "예문 뜻": "이것은 우리 집 주소야."
+    },
+    {
+        "단어": "band",
+        "단어 뜻": "명사) 밴드",
+        "예문": "How about joining the school band?",
+        "예문 뜻": "학교 밴드에 가입하는 것은 어때?"
+    },
+    {
+        "단어": "club",
+        "단어 뜻": "명사) 동아리",
+        "예문": "What’s your favorite club?",
+        "예문 뜻": "가장 마음에 드는 동아리가 무엇이니?"
+    },
+    {
+        "단어": "grade",
+        "단어 뜻": "명사) 학년",
+        "예문": "My name is Sally and I’m in the fifth grade.",
+        "예문 뜻": "내 이름은 Sally고 5학년이야."
+    },
+    {
+        "단어": "history",
+        "단어 뜻": "명사) 역사",
+        "예문": "Do you like Korean history?",
+        "예문 뜻": "너는 한국 역사를 좋아하니?"
+    },
+    {
+        "단어": "hometown",
+        "단어 뜻": "명사) 고향",
+        "예문": "My hometown is Seoul.",
+        "예문 뜻": "내 고향은 서울이야."
+    },
+    {
+        "단어": "Phone\nnumber",
+        "단어 뜻": "전화번호",
+        "예문": "What’s your phone number?",
+        "예문 뜻": "네 전호번호는 무엇이니?"
+    },
+    {
+        "단어": "same",
+        "단어 뜻": "형용사) 같은",
+        "예문": "Jay and Clare like the same food.",
+        "예문 뜻": "Jay와 Clare는 같은 음식을 좋아해."
+    },
+    {
+        "단어": "spell",
+        "단어 뜻": "동사) 철자를 쓰\n다",
+        "예문": "How do you spell your name?",
+        "예문 뜻": "네 이름의 철자를 어떻게 쓰니?"
+    },
+    {
+        "단어": "student",
+        "단어 뜻": "명사) 학생",
+        "예문": "We are elementary school students.",
+        "예문 뜻": "우리는 초등학생이야."
+    },
+    {
+        "단어": "aunt",
+        "단어 뜻": "명사) 이모, 고모",
+        "예문": "Let me introduce my aunt.",
+        "예문 뜻": "우리 이모(고모)를 소개해 드릴게요."
+    },
+    {
+        "단어": "be going to",
+        "단어 뜻": "~ 할 것이다",
+        "예문": "I am going to play soccer.",
+        "예문 뜻": "나는 축구를 할 거야."
+    },
+    {
+        "단어": "boy",
+        "단어 뜻": "명사) 소년",
+        "예문": "The boy is my brother.",
+        "예문 뜻": "그 소년은 우리 형이야."
+    },
+    {
+        "단어": "exercise",
+        "단어 뜻": "동사) 운동하다",
+        "예문": "Jimmy is going to exercise every day.",
+        "예문 뜻": "Jimmy는 매일 운동할 거야."
+    },
+    {
+        "단어": "girl",
+        "단어 뜻": "명사) 소녀",
+        "예문": "The girl is my sister.",
+        "예문 뜻": "그 소녀는 우리 누나야."
+    },
+    {
+        "단어": "introduce",
+        "단어 뜻": "동사) 소개하다",
+        "예문": "Let me introduce my cousin to you.",
+        "예문 뜻": "제 사촌을 소개해 드릴게요."
+    },
+    {
+        "단어": "learn",
+        "단어 뜻": "동사) 배우다",
+        "예문": "We are going to learn Korean history.",
+        "예문 뜻": "우리는 한국 역사를 배울 거야."
+    },
+    {
+        "단어": "run a marathon",
+        "단어 뜻": "마라톤하다",
+        "예문": "I’m going to run a marathon.",
+        "예문 뜻": "나는 마라톤을 뛸 거야."
+    },
+    {
+        "단어": "visit",
+        "단어 뜻": "동사) 방문하다",
+        "예문": "He is going to visit his grandpa.",
+        "예문 뜻": "그는 그의 할아버지를 방문할 거야."
+    },
+    {
+        "단어": "woman",
+        "단어 뜻": "명사) 여자",
+        "예문": "The woman is my mom.",
+        "예문 뜻": "그 여자분은 우리 엄마셔."
+    },
+    {
+        "단어": "catch",
+        "단어 뜻": "동사) 잡다",
+        "예문": "My dog is good at catching Frisbees.",
+        "예문 뜻": "우리 개는 원반을 잘 잡아."
+    },
+    {
+        "단어": "contest",
+        "단어 뜻": "명사) 대회",
+        "예문": "When is the food cooking contest?",
+        "예문 뜻": "음식 경연 대회는 언제니?"
+    },
+    {
+        "단어": "date",
+        "단어 뜻": "명사) 날짜",
+        "예문": "What’s the date today?",
+        "예문 뜻": "오늘 며칠이니?"
+    },
+    {
+        "단어": "football",
+        "단어 뜻": "명사) 축구",
+        "예문": "Football is my favorite sports.",
+        "예문 뜻": "축구는 내가 가장 좋아하는 운동이야."
+    },
+    {
+        "단어": "kick",
+        "단어 뜻": "동사) 차다",
+        "예문": "I’m good at kicking a ball.",
+        "예문 뜻": "나는 공을 잘 차."
+    },
+    {
+        "단어": "match",
+        "단어 뜻": "명사) 시합",
+        "예문": "When is the boxing match?",
+        "예문 뜻": "권투 시합은 언제니?"
+    },
+    {
+        "단어": "pass",
+        "단어 뜻": "동사) 전달하다",
+        "예문": "I’m good at passing a ball.",
+        "예문 뜻": "나는 공을 잘 전달해."
+    },
+    {
+        "단어": "race",
+        "단어 뜻": "명사) 경주",
+        "예문": "When is the race?",
+        "예문 뜻": "경주는 언제니?"
+    },
+    {
+        "단어": "test",
+        "단어 뜻": "명사) 시험",
+        "예문": "When is the English test?",
+        "예문 뜻": "영어 시험은 언제니?"
+    },
+    {
+        "단어": "throw",
+        "단어 뜻": "동사) 던지다",
+        "예문": "I’m good at throwing a ball.",
+        "예문 뜻": "나는 공을 잘 던져."
+    },
+    {
+        "단어": "bring",
+        "단어 뜻": "동사) 가져오다",
+        "예문": "Bring the brush.",
+        "예문 뜻": "빗자루를 가져와."
+    },
+    {
+        "단어": "can",
+        "단어 뜻": "명사) 깡통",
+        "예문": "Look! There are cans.",
+        "예문 뜻": "봐! 깡통이 있어."
+    },
+    {
+        "단어": "clean up",
+        "단어 뜻": "치우다",
+        "예문": "Let’s clean up the beach!",
+        "예문 뜻": "해변을 치우자!"
+    },
+    {
+        "단어": "farm",
+        "단어 뜻": "명사) 농장",
+        "예문": "How about going to my uncle’s farm?",
+        "예문 뜻": "우리 삼촌의 농장에 가는 것은 어때?"
+    },
+    {
+        "단어": "festival",
+        "단어 뜻": "명사) 축제",
+        "예문": "How about going to the festival?",
+        "예문 뜻": "그 축제에 가는 것은 어때?"
+    },
+    {
+        "단어": "palace",
+        "단어 뜻": "명사) 궁전",
+        "예문": "How about going to the Buckingham palace?",
+        "예문 뜻": "버킹엄 궁전에 가는 것은 어때?"
+    },
+    {
+        "단어": "plastic",
+        "단어 뜻": "형용사) 비닐로 된",
+        "예문": "You should bring your plastic bags, too.",
+        "예문 뜻": "너는 비닐 봉지도 가져와야 해."
+    },
+    {
+        "단어": "recycle",
+        "단어 뜻": "동사) 재활용하다",
+        "예문": "We should recycle bottles.",
+        "예문 뜻": "우리는 병을 재활용해야 해."
+    },
+    {
+        "단어": "temple",
+        "단어 뜻": "명사) 사원 절",
+        "예문": "How about going to the temple?",
+        "예문 뜻": "그 사원(절)에 가는 것은 어때?"
+    },
+    {
+        "단어": "tower",
+        "단어 뜻": "명사) 탑",
+        "예문": "How about going to the Eiffel Tower?",
+        "예문 뜻": "에펠 탑에 가는 것은 어때?"
+    },
+    {
+        "단어": "artist",
+        "단어 뜻": "명사) 화가",
+        "예문": "I want to be an artist.",
+        "예문 뜻": "나는 화가가 되고 싶어."
+    },
+    {
+        "단어": "astronaut",
+        "단어 뜻": "명사) 우주 비행\n사",
+        "예문": "Do you want to be an astronaut?",
+        "예문 뜻": "너는 우주 비행사가 되고 싶니?"
+    },
+    {
+        "단어": "future",
+        "단어 뜻": "명사) 미래",
+        "예문": "What do you want to be in the future?",
+        "예문 뜻": "너는 미래에 무엇을 하고 싶니?"
+    },
+    {
+        "단어": "nurse",
+        "단어 뜻": "명사) 간호사",
+        "예문": "I want to be a nurse.",
+        "예문 뜻": "나는 간호사가 되고 싶어."
+    },
+    {
+        "단어": "pianist",
+        "단어 뜻": "명사) 피아니스\n트",
+        "예문": "I want to be a pianist.",
+        "예문 뜻": "나는 피아니스트가 되고 싶어."
+    },
+    {
+        "단어": "pilot",
+        "단어 뜻": "명사) 조종사",
+        "예문": "Do you want to be a pilot?",
+        "예문 뜻": "너는 조종사가 되고 싶니?"
+    },
+    {
+        "단어": "scientist",
+        "단어 뜻": "명사) 과학자",
+        "예문": "I want to be a scientist.",
+        "예문 뜻": "나는 과학자가 되고 싶어."
+    },
+    {
+        "단어": "teach",
+        "단어 뜻": "동사) 가르치다",
+        "예문": "I want to teach English.",
+        "예문 뜻": "나는 영어를 가르치고 싶어."
+    },
+    {
+        "단어": "travel",
+        "단어 뜻": "동사) 여행하다",
+        "예문": "I want to travel abroad.",
+        "예문 뜻": "나는 해외 여행을 하고 싶어."
+    },
+    {
+        "단어": "writer",
+        "단어 뜻": "명사) 작가",
+        "예문": "Do you want to be a writer?",
+        "예문 뜻": "너는 작가가 되고 싶니?"
+    },
+    {
+        "단어": "bench",
+        "단어 뜻": "명사) 벤치",
+        "예문": "Don’t sit on the bench.",
+        "예문 뜻": "그 벤치에 앉지 마세요."
+    },
+    {
+        "단어": "classroom",
+        "단어 뜻": "명사) 교실",
+        "예문": "Don’t run in the classroom.",
+        "예문 뜻": "교실에서 뛰지 마세요."
+    },
+    {
+        "단어": "dangerous",
+        "단어 뜻": "형용사) 위험한",
+        "예문": "Look out! You look so dangerous.",
+        "예문 뜻": "조심해! 이 길은 너무 어두워."
+    },
+    {
+        "단어": "dark",
+        "단어 뜻": "형용사) 어두운",
+        "예문": "Look out! This road is too dark.",
+        "예문 뜻": "조심해! 이 길은 너무 어두워."
+    },
+    {
+        "단어": "grass",
+        "단어 뜻": "명사) 잔디",
+        "예문": "Don’t walk on the grass.",
+        "예문 뜻": "잔디밭에 들어가지 마세요."
+    },
+    {
+        "단어": "look out",
+        "단어 뜻": "조심하다",
+        "예문": "Look out!",
+        "예문 뜻": "조심해!"
+    },
+    {
+        "단어": "noise",
+        "단어 뜻": "명사) 소음",
+        "예문": "Don’t make noise in the library.",
+        "예문 뜻": "도서관에서 시끄럽게 하지 마세요."
+    },
+    {
+        "단어": "slippery",
+        "단어 뜻": "형용사) 미끄러\n운",
+        "예문": "Look out! This place is slippery.",
+        "예문 뜻": "조심해! 이곳은 미끄러워."
+    },
+    {
+        "단어": "stair",
+        "단어 뜻": "명사) 계단",
+        "예문": "Don’t jump on the stairs.",
+        "예문 뜻": "계단에서 뛰지 마세요."
+    },
+    {
+        "단어": "wet",
+        "단어 뜻": "형용사) 젖은",
+        "예문": "Don’t come out! You’re all wet!",
+        "예문 뜻": "나오지 마! 너 전부 젖었어!"
+    },
+    {
+        "단어": "bakery",
+        "단어 뜻": "명사) 제과점",
+        "예문": "There is a lot of delicious bread in this bakery.",
+        "예문 뜻": "이 제과점에는 맛있는 빵이 많이 있어."
+    },
+    {
+        "단어": "behind",
+        "단어 뜻": "전치사) ~뒤에",
+        "예문": "What do you have behind your back?",
+        "예문 뜻": "네 등 뒤에 무엇을 가지고 있니?"
+    },
+    {
+        "단어": "downstairs",
+        "단어 뜻": "부사) 아래층으\n로",
+        "예문": "A turtle is going downstairs.",
+        "예문 뜻": "거북이 한 마리가 아래층으로 내려가고 있어."
+    },
+    {
+        "단어": "far",
+        "단어 뜻": "부사) 멀리",
+        "예문": "That ball is far from me.",
+        "예문 뜻": "저 공은 내 멀리 있어."
+    },
+    {
+        "단어": "fire station",
+        "단어 뜻": "명사) 소방서",
+        "예문": "The fire station has one fire engine.",
+        "예문 뜻": "그 소방서는 소방차 한 대가 있어."
+    },
+    {
+        "단어": "in front of",
+        "단어 뜻": "전치사) ~앞에",
+        "예문": "Tommy’s family took a picture in front of their house.",
+        "예문 뜻": "Tommy의 가족은 집 앞에서 사진을 찍었어."
+    },
+    {
+        "단어": "near",
+        "단어 뜻": "부사) 가까이에",
+        "예문": "This ball is near me.",
+        "예문 뜻": "이 공은 내 가까이에 있어."
+    },
+    {
+        "단어": "next to",
+        "단어 뜻": "전치사) ~옆에",
+        "예문": "My cat is next to Kate’s dog.",
+        "예문 뜻": "내 고양이가 Kate의 개 옆에 있어."
+    },
+    {
+        "단어": "theater",
+        "단어 뜻": "명사) 극장",
+        "예문": "They are watching a movie in the theater.",
+        "예문 뜻": "그들은 극장에서 영화를 보고 있어."
+    },
+    {
+        "단어": "upstairs",
+        "단어 뜻": "부사) 위층으로",
+        "예문": "She is going upstairs.",
+        "예문 뜻": "그녀가 위층으로 올라가고 있어."
+    },
+    {
+        "단어": "boring",
+        "단어 뜻": "형용사) 지겨운",
+        "예문": "I think this movie is boring.",
+        "예문 뜻": "나는 이 영화가 지겹다고 생각해."
+    },
+    {
+        "단어": "fool",
+        "단어 뜻": "명사) 바보",
+        "예문": "It’s about two fools.",
+        "예문 뜻": "그것은 두 바보들에 관한 것이에요."
+    },
+    {
+        "단어": "funny",
+        "단어 뜻": "형용사) 웃기는",
+        "예문": "I think the picture is funny.",
+        "예문 뜻": "나는 그 사진이 웃기다고 생각해."
+    },
+    {
+        "단어": "hungry",
+        "단어 뜻": "형용사) 배고픈",
+        "예문": "It’s about a hungry dog.",
+        "예문 뜻": "그것은 한 배고픈 개에 관한 것이에요."
+    },
+    {
+        "단어": "interesting",
+        "단어 뜻": "형용사) 흥미로운",
+        "예문": "I think this book is interesting.",
+        "예문 뜻": "나는 이 책이 흥미롭다고 생각해."
+    },
+    {
+        "단어": "lot",
+        "단어 뜻": "명사) 많음",
+        "예문": "It’s about a lot of old cell phones.",
+        "예문 뜻": "그것은 많은 오래된 휴대폰에 관한 것이에요."
+    },
+    {
+        "단어": "news",
+        "단어 뜻": "명사) 뉴스",
+        "예문": "She is always in the news.",
+        "예문 뜻": "그녀는 늘 뉴스에 나온다."
+    },
+    {
+        "단어": "polite",
+        "단어 뜻": "형용사) 예의 바른",
+        "예문": "It’s about a polite man.",
+        "예문 뜻": "그것은 한 예의 바른 남자에 관한 것이에요."
+    },
+    {
+        "단어": "smart",
+        "단어 뜻": "형용사) 영리한",
+        "예문": "It’s about a smart girl.",
+        "예문 뜻": "그것은 한 영리한 소녀에 관한 것이에요."
+    },
+    {
+        "단어": "think",
+        "단어 뜻": "동사) 생각하다",
+        "예문": "I think it’s a good idea.",
+        "예문 뜻": "나는 그것이 좋은 생각이라고 생각해."
+    },
+    {
+        "단어": "fast",
+        "단어 뜻": "형용사) 빠른",
+        "예문": "That motorcycle is faster than my car.",
+        "예문 뜻": "저 오토바이는 내 자동차보다 더 빨라."
+    },
+    {
+        "단어": "fat",
+        "단어 뜻": "형용사) 뚱뚱한",
+        "예문": "My cat is fatter than Nina’s cat.",
+        "예문 뜻": "내 고양이는 Nina의 고양이보다 더 뚱뚱해."
+    },
+    {
+        "단어": "heavy",
+        "단어 뜻": "형용사) 무거운",
+        "예문": "My dad is carrying heavier boxes than me.",
+        "예문 뜻": "우리 아빠는 내 것보다 더 무거운 상자를 옮기고 계셔."
+    },
+    {
+        "단어": "high",
+        "단어 뜻": "부사) 높게",
+        "예문": "Ted can jump higher than David.",
+        "예문 뜻": "Ted는 David보다 더 높게 점프해."
+    },
+    {
+        "단어": "old",
+        "단어 뜻": "형용사) 나이가 든",
+        "예문": "My grandpa is older than my grandma.",
+        "예문 뜻": "우리 할아버지는 우리 할머니보다 더 연세가 드셨어."
+    },
+    {
+        "단어": "slow",
+        "단어 뜻": "형용사) 느린",
+        "예문": "One snail is slower than the other two.",
+        "예문 뜻": "달팽이 한 마리가 다른 두 마리보다 더 느려."
+    },
+    {
+        "단어": "strong",
+        "단어 뜻": "형용사) 힘이 센",
+        "예문": "Cindy is stronger than Becky.",
+        "예문 뜻": "Cindy는 Becky보다 힘이 더세."
+    },
+    {
+        "단어": "thin",
+        "단어 뜻": "형용사) 마른",
+        "예문": "Phil is thinner than Emily.",
+        "예문 뜻": "Phil은 Emily보다 더 말랐어."
+    },
+    {
+        "단어": "weak",
+        "단어 뜻": "형용사) 힘이 약한",
+        "예문": "James is weaker than the boxer.",
+        "예문 뜻": "James는 그 권투 선수보다 힘이 더 약해."
+    },
+    {
+        "단어": "young",
+        "단어 뜻": "형용사) 나이가 어린",
+        "예문": "Kelly looks younger than the other friends.",
+        "예문 뜻": "Kelly는 다른 친구들보다 나이가 더 어려 보여."
+    },
+    {
+        "단어": "angry",
+        "단어 뜻": "형용사) 화난",
+        "예문": "Brian looks so angry.",
+        "예문 뜻": "Brian은 무척 화난 것 같아."
+    },
+    {
+        "단어": "excited",
+        "단어 뜻": "형용사) 신난",
+        "예문": "Eric looks so excited.",
+        "예문 뜻": "Eric은 무척 신난 것 같아."
+    },
+    {
+        "단어": "happy",
+        "단어 뜻": "형용사) 행복한",
+        "예문": "My sister looks so happy.",
+        "예문 뜻": "내 여동생이 무척 행복한 것 같아."
+    },
+    {
+        "단어": "nervous",
+        "단어 뜻": "형용사) 초조한",
+        "예문": "Paul looks so nervous.",
+        "예문 뜻": "Paul은 무척 초조한 것 같아."
+    },
+    {
+        "단어": "pleased",
+        "단어 뜻": "형용사) 기쁜",
+        "예문": "Harry looks so pleased.",
+        "예문 뜻": "Harry는 무척 기쁜 것 같아."
+    },
+    {
+        "단어": "sad",
+        "단어 뜻": "형용사) 슬픈",
+        "예문": "You look so sad.",
+        "예문 뜻": "너는 무척 슬픈 것 같아."
+    },
+    {
+        "단어": "scared",
+        "단어 뜻": "형용사) 겁먹은",
+        "예문": "Timmy looks so scared.",
+        "예문 뜻": "Timmy는 무척 놀란 것 같아."
+    },
+    {
+        "단어": "surprised",
+        "단어 뜻": "형용사) 놀란",
+        "예문": "Kate looks so surprised.",
+        "예문 뜻": "Kate는 무척 놀란 것 같아."
+    },
+    {
+        "단어": "upset",
+        "단어 뜻": "형용사) 속상한",
+        "예문": "Ted looks so upset.",
+        "예문 뜻": "Ted는 무척 속상해 보여."
+    },
+    {
+        "단어": "worried",
+        "단어 뜻": "형용사) 걱정하는",
+        "예문": "Mom looks so worried.",
+        "예문 뜻": "엄마는 무척 걱정하시는 것 같아."
+    },
+    {
+        "단어": "best",
+        "단어 뜻": "형용사) 가장좋은",
+        "예문": "It’s the best plant for your health.",
+        "예문 뜻": "그것은 네 건강에 가장 좋은 식물이야."
+    },
+    {
+        "단어": "better",
+        "단어 뜻": "형용사) 더 좋은",
+        "예문": "Your bike is better than mine.",
+        "예문 뜻": "네 자전거가 내 것보다 저 좋구나."
+    },
+    {
+        "단어": "both",
+        "단어 뜻": "명사) 양쪽",
+        "예문": "I like both of them.",
+        "예문 뜻": "나는 양쪽 다 좋아."
+    },
+    {
+        "단어": "each",
+        "단어 뜻": "형용사) 각각의",
+        "예문": "Each student looks happy.",
+        "예문 뜻": "각각의 학생은 행복해 보여."
+    },
+    {
+        "단어": "less",
+        "단어 뜻": "형용사) 더 적은",
+        "예문": "There is less juice in the glass on the right.",
+        "예문 뜻": "오른쪽 유리잔의 주스가 더 적게 있어."
+    },
+    {
+        "단어": "more",
+        "단어 뜻": "형용사) 더 많은",
+        "예문": "Have some more cake.",
+        "예문 뜻": "케이크 좀 더 먹어."
+    },
+    {
+        "단어": "nothing",
+        "단어 뜻": "대명사) 아무것도~없다",
+        "예문": "I have nothing.",
+        "예문 뜻": "나는 아무것도 없어."
+    },
+    {
+        "단어": "than",
+        "단어 뜻": "접속사) ~보다",
+        "예문": "The green umbrella is bigger than the red right.",
+        "예문 뜻": "초록 우산은 빨간 우산보다 더 커."
+    },
+    {
+        "단어": "too",
+        "단어 뜻": "부사) 너무, 지나치게",
+        "예문": "This teddy bear is too expensive.",
+        "예문 뜻": "이 곰 인형은 너무 비싸."
+    },
+    {
+        "단어": "very",
+        "단어 뜻": "부사) 매우, 아주",
+        "예문": "The piano is very big.",
+        "예문 뜻": "그 피아노는 아주 커."
+    },
+    {
+        "단어": "bad cold",
+        "단어 뜻": "독감",
+        "예문": "I have a bad cold.",
+        "예문 뜻": "나는 독감에 걸렸어."
+    },
+    {
+        "단어": "cough",
+        "단어 뜻": "명사) 기침",
+        "예문": "The boy has a cough.",
+        "예문 뜻": "그 소년은 기침을 해."
+    },
+    {
+        "단어": "dentist",
+        "단어 뜻": "명사) 치과 의사",
+        "예문": "Why don’t you go to see a dentist?",
+        "예문 뜻": "치과 의사에게 가 보는 것이 어떠니?"
+    },
+    {
+        "단어": "drink",
+        "단어 뜻": "동사) 마시다",
+        "예문": "Why don’t you drink some hot tea?",
+        "예문 뜻": "뜨거운 차를 좀 마시는 것이 어떠니?"
+    },
+    {
+        "단어": "medicine",
+        "단어 뜻": "명사) 약",
+        "예문": "Why don’t you take some medicine?",
+        "예문 뜻": "약을 좀 먹는 것이 어떠니?"
+    },
+    {
+        "단어": "rest",
+        "단어 뜻": "명사) 휴식",
+        "예문": "Why don’t you get some rest?",
+        "예문 뜻": "좀 쉬는 것이 어떠니?"
+    },
+    {
+        "단어": "runny nose",
+        "단어 뜻": "콧물",
+        "예문": "The boy has a runny nose.",
+        "예문 뜻": "그 소년은 콧물이 흘러."
+    },
+    {
+        "단어": "sore throat",
+        "단어 뜻": "목 통증",
+        "예문": "He has a sore throat.",
+        "예문 뜻": "그는 목이 아파."
+    },
+    {
+        "단어": "toothache",
+        "단어 뜻": "명사) 치통",
+        "예문": "I have a toothache.",
+        "예문 뜻": "나는 이가 아파."
+    },
+    {
+        "단어": "use",
+        "단어 뜻": "동사) 사용하다",
+        "예문": "Why don’t you use a cold towel?",
+        "예문 뜻": "차가운 수건을 사용해 보는 것이 어떠니?"
+    },
+    {
+        "단어": "because",
+        "단어 뜻": "접속사) ~하기 때문\n에",
+        "예문": "Tim is angry because Amy made a mistake in the report.",
+        "예문 뜻": "Amy가 보고서에서 실수를 했기 때문에 Tim이 화났어."
+    },
+    {
+        "단어": "break",
+        "단어 뜻": "동사) 부수다",
+        "예문": "Why do you break the bricks?",
+        "예문 뜻": "너는 왜 벽돌들을 부수니?"
+    },
+    {
+        "단어": "hike",
+        "단어 뜻": "동사) 하이킹을 하다",
+        "예문": "I like hiking in the mountains.",
+        "예문 뜻": "나는 산에서 하이킹하는 것을 좋아해."
+    },
+    {
+        "단어": "joke",
+        "단어 뜻": "명사) 농담",
+        "예문": "I like telling jokes.",
+        "예문 뜻": "나는 농담하는 것을 좋아해."
+    },
+    {
+        "단어": "lie",
+        "단어 뜻": "명사) 거짓말",
+        "예문": "Judy’s nose is growing long because she told a lie to me.",
+        "예문 뜻": "Judy는 나에게 거짓말을 했기 때문에 코가 길어지고 있어."
+    },
+    {
+        "단어": "lose",
+        "단어 뜻": "동사) 잃어버리다",
+        "예문": "Lisa is searching for her bag because she lost her key.",
+        "예문 뜻": "Lisa는 열쇠를 잃어버렸기 때문에 가방을 뒤지고 있어."
+    },
+    {
+        "단어": "musical",
+        "단어 뜻": "명사) 뮤지컬",
+        "예문": "I like watching musicals.",
+        "예문 뜻": "나는 뮤지컬 보는 것을 좋아해."
+    },
+    {
+        "단어": "poem",
+        "단어 뜻": "명사) 시",
+        "예문": "I like reading poems.",
+        "예문 뜻": "나는 시 읽는 것을 좋아해."
+    },
+    {
+        "단어": "why",
+        "단어 뜻": "부사) 왜",
+        "예문": "Why are you so happy?",
+        "예문 뜻": "너는 왜 그렇게 행복하니?"
+    },
+    {
+        "단어": "win",
+        "단어 뜻": "동사) 이기다",
+        "예문": "We are happy because we won the game.",
+        "예문 뜻": "우리는 경기에서 이겼기 때문에 행복해."
+    },
+    {
+        "단어": "different",
+        "단어 뜻": "형용사) 다른",
+        "예문": "Jack’s uniform is different from ours.",
+        "예문 뜻": "Jack의 체육복은 우리 것과 달라."
+    },
+    {
+        "단어": "difficult",
+        "단어 뜻": "형용사) 어려운",
+        "예문": "This math problem is difficult.",
+        "예문 뜻": "이 수학 문제는 어려워."
+    },
+    {
+        "단어": "easy",
+        "단어 뜻": "형용사) 쉬운",
+        "예문": "This math problem is very easy.",
+        "예문 뜻": "이 수학 문제는 아주 쉬어."
+    },
+    {
+        "단어": "everyone",
+        "단어 뜻": "대명사) 모두",
+        "예문": "Everyone is raising their right hands.",
+        "예문 뜻": "모두 오른손을 들고 있어."
+    },
+    {
+        "단어": "fresh",
+        "단어 뜻": "형용사) 신선한",
+        "예문": "The fruits are fresh.",
+        "예문 뜻": "그 과일들은 신선해."
+    },
+    {
+        "단어": "invite",
+        "단어 뜻": "동사) 초대하다",
+        "예문": "Thanks for inviting me.",
+        "예문 뜻": "초대해 줘서 고마워."
+    },
+    {
+        "단어": "party",
+        "단어 뜻": "명사) 파티, 잔치",
+        "예문": "Would you like to come to my birthday party?",
+        "예문 뜻": "내 생일 파티에 올래?"
+    },
+    {
+        "단어": "little",
+        "단어 뜻": "형용사) 작은",
+        "예문": "This cat is little and cute.",
+        "예문 뜻": "이 고양이는 작고 귀여워."
+    },
+    {
+        "단어": "pumpkin",
+        "단어 뜻": "명사) 호박",
+        "예문": "It’s a pumpkin.",
+        "예문 뜻": "그것은 호박이야."
+    },
+    {
+        "단어": "smell",
+        "단어 뜻": "동사) ~한 냄새가 나다",
+        "예문": "It smells good.",
+        "예문 뜻": "냄새 좋다."
+    },
+    {
+        "단어": "buy",
+        "단어 뜻": "동사) 사다",
+        "예문": "I buy some vegetables every day.",
+        "예문 뜻": "나는 매일 채소를 좀 사."
+    },
+    {
+        "단어": "cook",
+        "단어 뜻": "동사) 요리하다",
+        "예문": "We are cooking dinner.",
+        "예문 뜻": "우리는 저녁 식사를 요리하고 있어."
+    },
+    {
+        "단어": "cry",
+        "단어 뜻": "동사) 울다",
+        "예문": "Danny is crying in his room.",
+        "예문 뜻": "Danny가 자기 방에서 울고 있어."
+    },
+    {
+        "단어": "drop",
+        "단어 뜻": "동사) 떨어뜨리\n다",
+        "예문": "Brad dropped his ice cream on the floor.",
+        "예문 뜻": "Brad가 바닥에 아이스크림을 떨어뜨렸어."
+    },
+    {
+        "단어": "forget",
+        "단어 뜻": "동사) 잊다",
+        "예문": "Mike forgot his mother’s birthday.",
+        "예문 뜻": "Mike는 그의 어머니 생신을 잊었다."
+    },
+    {
+        "단어": "listen to",
+        "단어 뜻": "듣다",
+        "예문": "She is listening to the sea.",
+        "예문 뜻": "그녀는 바다 소리를 듣고 있어."
+    },
+    {
+        "단어": "meet",
+        "단어 뜻": "동사) 만나다",
+        "예문": "They are meeting at the office.",
+        "예문 뜻": "그들은 사무실에서 만나고 있어."
+    },
+    {
+        "단어": "remember",
+        "단어 뜻": "동사) 기억하다",
+        "예문": "I can remember your phone number.",
+        "예문 뜻": "나는 네 전화번호를 기억할 수 있어."
+    },
+    {
+        "단어": "ride",
+        "단어 뜻": "동사) 타다",
+        "예문": "Can you ride a horse?",
+        "예문 뜻": "너는 말을 탈 수 있니?"
+    },
+    {
+        "단어": "say",
+        "단어 뜻": "동사) 말하다",
+        "예문": "How do you say “fan” in Korean?",
+        "예문 뜻": "한국어로 “부채”를 어떻게 말하니?"
+    },
+    {
+        "단어": "back",
+        "단어 뜻": "부사) 뒤로",
+        "예문": "Go back slowly, please.",
+        "예문 뜻": "뒤로 천천히 가 주세요."
+    },
+    {
+        "단어": "elementary\nschool",
+        "단어 뜻": "초등학교",
+        "예문": "Where is ABC Elementary School?",
+        "예문 뜻": "ABC 초등학교가 어디에 있나요?"
+    },
+    {
+        "단어": "floor",
+        "단어 뜻": "명사) 층",
+        "예문": "The restroom is on the third floor.",
+        "예문 뜻": "화장실은 3층에 있어요."
+    },
+    {
+        "단어": "hour",
+        "단어 뜻": "명사) 시간",
+        "예문": "It takes an hour.",
+        "예문 뜻": "1시간 걸려요."
+    },
+    {
+        "단어": "middle",
+        "단어 뜻": "형용사) 가운데의",
+        "예문": "The middle building is my dad’s office.",
+        "예문 뜻": "가운데 건물이 저희 아빠의 사무실이에요."
+    },
+    {
+        "단어": "minute",
+        "단어 뜻": "명사) 분",
+        "예문": "It takes 10 minutes.",
+        "예문 뜻": "10분 걸려요."
+    },
+    {
+        "단어": "only",
+        "단어 뜻": "부사) 단, 오직",
+        "예문": "There is only one bench in the park.",
+        "예문 뜻": "그 공원에는 벤치가 단 한 개 있어요."
+    },
+    {
+        "단어": "restroom",
+        "단어 뜻": "명사) 화장실",
+        "예문": "Where is the restroom?",
+        "예문 뜻": "화장실이 어디에 있나요?"
+    },
+    {
+        "단어": "side",
+        "단어 뜻": "명사) 측면, 면",
+        "예문": "The elevator is on your right side.",
+        "예문 뜻": "엘리베이터는 오른쪽에 있어요."
+    },
+    {
+        "단어": "way",
+        "단어 뜻": "명사) 길",
+        "예문": "Go along this way.",
+        "예문 뜻": "이쪽 길을 따라가세요."
+    },
+    {
+        "단어": "agree",
+        "단어 뜻": "동사) 동의하다",
+        "예문": "I agree with you.",
+        "예문 뜻": "난 네 생각에 동의해."
+    },
+    {
+        "단어": "anything",
+        "단어 뜻": "대명사) 무엇이\n든",
+        "예문": "I can do anything.",
+        "예문 뜻": "나는 무엇이든 할 수 있어."
+    },
+    {
+        "단어": "congratulate",
+        "단어 뜻": "동사) 축하하다",
+        "예문": "They are congratulating Tom.",
+        "예문 뜻": "그들은 Tom을 축하하고 있어."
+    },
+    {
+        "단어": "graph",
+        "단어 뜻": "명사) 그래프",
+        "예문": "Look at this graph.",
+        "예문 뜻": "이 그래프를 봐."
+    },
+    {
+        "단어": "matter",
+        "단어 뜻": "명사) 문제",
+        "예문": "What’s the matter?",
+        "예문 뜻": "무슨 일이죠?"
+    },
+    {
+        "단어": "speech",
+        "단어 뜻": "명사) 연설",
+        "예문": "Ms. Green’s speech was great.",
+        "예문 뜻": "Green 씨의 연설은 멋졌어."
+    },
+    {
+        "단어": "top",
+        "단어 뜻": "명사) 꼭대기",
+        "예문": "He is on top of the mountain.",
+        "예문 뜻": "그는 산꼭대기에 있어."
+    },
+    {
+        "단어": "website",
+        "단어 뜻": "명사) 웹사이트",
+        "예문": "I know an interesting website.",
+        "예문 뜻": "나는 흥미로운 웹사이트 하나를 알고 있어."
+    },
+    {
+        "단어": "weight",
+        "단어 뜻": "명사) 무게",
+        "예문": "I’m trying to lose weight.",
+        "예문 뜻": "나는 몸무게를 줄이려고 노력하고 있어."
+    },
+    {
+        "단어": "x-ray",
+        "단어 뜻": "명사) 엑스레이",
+        "예문": "Dr. James is looking at the x-ray.",
+        "예문 뜻": "James 의사 선생님은 엑스레이를 보고 계셔."
+    }
+]

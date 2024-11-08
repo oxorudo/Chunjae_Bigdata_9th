@@ -1,0 +1,135 @@
+[
+    {
+        "단어": "admire",
+        "단어 뜻": "감탄하다",
+        "품사": "v.",
+        "예문": "I admired her brilliant paintings.",
+        "예문 뜻": "나는 그녀의 뛰어난 그림에 감탄했다."
+    },
+    {
+        "단어": "athlete",
+        "단어 뜻": "운동 선수",
+        "품사": "n.",
+        "예문": "The athlete is still full of confidence.",
+        "예문 뜻": "그 운동 선수는 여전히 자신감에 차 있다."
+    },
+    {
+        "단어": "audience",
+        "단어 뜻": "관중, 관객",
+        "품사": "n.",
+        "예문": "I felt nervous singing in front of the audience.",
+        "예문 뜻": "나는 관중 앞에서 노래를 하게 되어 긴장했다."
+    },
+    {
+        "단어": "compose",
+        "단어 뜻": "작곡하다",
+        "품사": "v.",
+        "예문": "I'm going to compose a simple and catchy melody.",
+        "예문 뜻": "나는 간단하고 기억하기 쉬운 멜로디를 작곡할 것이다."
+    },
+    {
+        "단어": "conduct",
+        "단어 뜻": "지휘하다",
+        "품사": "v.",
+        "예문": "He practiced very hard to conduct an orchestra.",
+        "예문 뜻": "그는 오케스트라를 지휘하기 위해 아주 열심히 연습했다."
+    },
+    {
+        "단어": "create",
+        "단어 뜻": "창조하다",
+        "품사": "v.",
+        "예문": "We can create wonderful artworks with our imagination.",
+        "예문 뜻": "우리는 우리의 상상력으로 멋진 예술 작품을 창조할 수 있다."
+    },
+    {
+        "단어": "defeat",
+        "단어 뜻": "패배",
+        "품사": "n.",
+        "예문": "The world boxing champion has only had 1 defeat in 12 fights.",
+        "예문 뜻": "그 복싱 세계 챔피언은 열두 번 싸워 패한 것은 한 번뿐이다."
+    },
+    {
+        "단어": "design",
+        "단어 뜻": "디자인, 도안",
+        "품사": "n.",
+        "예문": "The design of this skirt is simple but stylish.",
+        "예문 뜻": "이 스커트의 디자인은 단순하지만 멋이 있다."
+    },
+    {
+        "단어": "entertain",
+        "단어 뜻": "즐겁게 하다",
+        "품사": "v.",
+        "예문": "They gave a free street concert to entertain people.",
+        "예문 뜻": "그들은 사람들을 즐겁게 하기 위해 무료 거리 공연을 했다."
+    },
+    {
+        "단어": "fair",
+        "단어 뜻": "공정한",
+        "품사": "adj.",
+        "예문": "All the players should have a fair opportunity.",
+        "예문 뜻": "모든 선수들은 공정한 기회를 가져야 한다."
+    },
+    {
+        "단어": "gallery",
+        "단어 뜻": "미술관",
+        "품사": "n.",
+        "예문": "The gallery will hold a big exhibition about butterflies.",
+        "예문 뜻": "그 미술관은 나비에 관한 큰 전시회를 열 것이다."
+    },
+    {
+        "단어": "s",
+        "단어 뜻": "그녀는 동화책의 삽화를 그리고 싶어 한다.",
+        "품사": "books.",
+        "예문": "imitate",
+        "예문 뜻": "v."
+    },
+    {
+        "단어": "Nobody",
+        "단어 뜻": "imitate his dancing.",
+        "품사": "can",
+        "예문": "아무도 그의 춤을 모방할 수 없다.",
+        "예문 뜻": "instrument"
+    },
+    {
+        "단어": "Playing",
+        "단어 뜻": "instrument is a popular hobby.",
+        "품사": "an",
+        "예문": "악기를 연주하는 것은 인기 있는 취미 활동이다.",
+        "예문 뜻": "league"
+    },
+    {
+        "단어": "He",
+        "단어 뜻": "the best football player in the league.",
+        "품사": "is",
+        "예문": "그는 연맹에서 최고의 축구 선수이다.",
+        "예문 뜻": "leisure"
+    },
+    {
+        "단어": "Rafting",
+        "단어 뜻": "a popular water leisure sport in summer.",
+        "품사": "is",
+        "예문": "래프팅은 여름에 인기 있는 수상 레저 스포츠이다.",
+        "예문 뜻": "rank"
+    },
+    {
+        "단어": "Our",
+        "단어 뜻": "is to rank third in the world.",
+        "품사": "aim",
+        "예문": "우리 목표는 세계 3위를 차지하는 것이다.",
+        "예문 뜻": "referee"
+    },
+    {
+        "단어": "The",
+        "단어 뜻": "gave a yellow card to the goalkeeper.",
+        "품사": "referee",
+        "예문": "심판이 골키퍼에게 옐로 카드를 주었다.",
+        "예문 뜻": "score"
+    },
+    {
+        "단어": "The",
+        "단어 뜻": "score was 5 to 1.",
+        "품사": "final",
+        "예문": "최종 점수는 5대 1이었다.",
+        "예문 뜻": "victory"
+    }
+]

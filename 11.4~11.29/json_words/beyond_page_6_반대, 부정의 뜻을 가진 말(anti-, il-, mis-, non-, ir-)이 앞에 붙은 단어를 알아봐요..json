@@ -1,0 +1,135 @@
+[
+    {
+        "단어": "antisocial",
+        "단어 뜻": "반사회적인",
+        "품사": "adj.",
+        "예문": "Antisocial behaviors like riots and crime must be stopped.",
+        "예문 뜻": "폭동과 범죄와 같은 반사회적인 행동은 멈춰져야 한다."
+    },
+    {
+        "단어": "antiwar",
+        "단어 뜻": "전쟁을 반대하는",
+        "품사": "adj.",
+        "예문": "The people in the town have risen up in an antiwar movement.",
+        "예문 뜻": "그 소도시 사람들은 전쟁을 반대하는 운동을 일으켰다."
+    },
+    {
+        "단어": "illegally",
+        "단어 뜻": "불법적으로",
+        "품사": "adv.",
+        "예문": "They illegally download the movie from the Internet.",
+        "예문 뜻": "그들은 인터넷에서 불법적으로 영화를 다운받았다."
+    },
+    {
+        "단어": "illiberal",
+        "단어 뜻": "자유를 제한하는",
+        "품사": "adj.",
+        "예문": "Are you in favor of the illiberal bill?",
+        "예문 뜻": "당신은 자유를 제한하는 그 법안에 찬성하나요?"
+    },
+    {
+        "단어": "illiteracy",
+        "단어 뜻": "문맹",
+        "품사": "n.",
+        "예문": "The illiteracy rate is 15% in this country.",
+        "예문 뜻": "이 나라의 문맹률은 15%이다."
+    },
+    {
+        "단어": "illogical",
+        "단어 뜻": "비논리적인",
+        "품사": "adj.",
+        "예문": "People don't believe his illogical argument.",
+        "예문 뜻": "사람들은 그의 비논리적인 주장을 믿지 않는다."
+    },
+    {
+        "단어": "irrational",
+        "단어 뜻": "비이성적인",
+        "품사": "adj.",
+        "예문": "Remember not to be irrational to others. 다른 사람들에게 비이성적으로 굴지 않아야 한다는 것을 명심해라.",
+        "예문 뜻": "irregular"
+    },
+    {
+        "단어": "The",
+        "단어 뜻": "time for the buses in my city is irregular.",
+        "품사": "arrival",
+        "예문": "우리 도시의 버스 도착 시간은 불규칙적이다.",
+        "예문 뜻": "irrelevant"
+    },
+    {
+        "단어": "These",
+        "단어 뜻": "are irrelevant to the subject.",
+        "품사": "sentences",
+        "예문": "이 문장들은 주제와 상관없다.",
+        "예문 뜻": "irresponsible"
+    },
+    {
+        "단어": "His",
+        "단어 뜻": "actions made us angry.",
+        "품사": "irresponsible",
+        "예문": "그의 무책임한 행동들은 우리를 화나게 했다.",
+        "예문 뜻": "misfortune"
+    },
+    {
+        "단어": "with",
+        "단어 뜻": "그녀는 용기 있게 그녀의 불행에 맞섰다.",
+        "품사": "courage.",
+        "예문": "misjudge",
+        "예문 뜻": "v. 잘못 판단하다"
+    },
+    {
+        "단어": "I",
+        "단어 뜻": "to have misjudged my neighbor.",
+        "품사": "seem",
+        "예문": "나는 이웃을 잘못 판단했던 것 같다.",
+        "예문 뜻": "mislead"
+    },
+    {
+        "단어": "mislead",
+        "단어 뜻": "그녀는 사람들을 속이려고 거짓말을 했다.",
+        "품사": "people.",
+        "예문": "misspell",
+        "예문 뜻": "v. 철자를 잘못 쓰다"
+    },
+    {
+        "단어": "I",
+        "단어 뜻": "for misspelling your name.",
+        "품사": "apologize",
+        "예문": "너의 이름 철자를 잘못 쓴 것에 대해 내가 사과할게.",
+        "예문 뜻": "misuse"
+    },
+    {
+        "단어": "Misuse",
+        "단어 뜻": "medicine can cause very dangerous problems.",
+        "품사": "of",
+        "예문": "약의 남용은 아주 위험한 문제를 초래할 수 있다.",
+        "예문 뜻": "nonfiction"
+    },
+    {
+        "단어": "Peter",
+        "단어 뜻": "nonfiction twice a week.",
+        "품사": "reads",
+        "예문": "Peter는 일주일에 두 번 논픽션을 읽는다.",
+        "예문 뜻": "nonsense"
+    },
+    {
+        "단어": "You",
+        "단어 뜻": "nonsense all the time.",
+        "품사": "talk",
+        "예문": "넌 항상 터무니없는 말을 한다.",
+        "예문 뜻": "nonsmoking"
+    },
+    {
+        "단어": "This",
+        "단어 뜻": "a nonsmoking restaurant.",
+        "품사": "is",
+        "예문": "이 식당은 금연입니다.",
+        "예문 뜻": "nonstop"
+    },
+    {
+        "단어": "When",
+        "단어 뜻": "you have nonstop buses?",
+        "품사": "do",
+        "예문": "직행 버스는 언제 있습니까?",
+        "예문 뜻": "nonviolent"
+    }
+]

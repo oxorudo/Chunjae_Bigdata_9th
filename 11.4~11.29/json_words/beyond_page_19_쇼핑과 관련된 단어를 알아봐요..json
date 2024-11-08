@@ -1,0 +1,135 @@
+[
+    {
+        "단어": "bargain",
+        "단어 뜻": "싼 물건",
+        "품사": "n.",
+        "예문": "The desk is a bargain at that price.",
+        "예문 뜻": "그 가격이면 그 책상은 싼 것이다."
+    },
+    {
+        "단어": "change",
+        "단어 뜻": "거스름돈",
+        "품사": "n.",
+        "예문": "Here's your change.",
+        "예문 뜻": "여기 거스름돈이 있습니다."
+    },
+    {
+        "단어": "charge",
+        "단어 뜻": "요금",
+        "품사": "n.",
+        "예문": "There's no need to pay a delivery charge.",
+        "예문 뜻": "배송료를 낼 필요가 없다."
+    },
+    {
+        "단어": "new",
+        "단어 뜻": "그녀는 새 시계의 무상 수리 서비스를 요구할 것이다.",
+        "품사": "watch.",
+        "예문": "clerk",
+        "예문 뜻": "n."
+    },
+    {
+        "단어": "The",
+        "단어 뜻": "helped me to choose the color of a cap.",
+        "품사": "clerk",
+        "예문": "점원이 내가 모자의 색을 고르는 것을 도와주었다.",
+        "예문 뜻": "customer"
+    },
+    {
+        "단어": "A",
+        "단어 뜻": "called to complain that his new chair was broken.",
+        "품사": "customer",
+        "예문": "한 고객이 새 의자가 부서졌다고 항의하기 위해 전화했다.",
+        "예문 뜻": "display"
+    },
+    {
+        "단어": "the",
+        "단어 뜻": "그녀는 가게에 진열된 새 신발들을 보고 있다.",
+        "품사": "store.",
+        "예문": "exchange",
+        "예문 뜻": "v."
+    },
+    {
+        "단어": "I",
+        "단어 뜻": "to exchange this blouse with the bigger one.",
+        "품사": "want",
+        "예문": "나는 이 블라우스를 더 큰 것으로 교환하길 원한다.",
+        "예문 뜻": "guarantee"
+    },
+    {
+        "단어": "He",
+        "단어 뜻": "a TV and it came with a one year guarantee.",
+        "품사": "bought",
+        "예문": "그는 TV를 샀고, 그것은 1년간 보증된다.",
+        "예문 뜻": "item"
+    },
+    {
+        "단어": "I",
+        "단어 뜻": "all the items on my shopping list.",
+        "품사": "bought",
+        "예문": "나는 쇼핑 목록의 모든 품목을 샀다.",
+        "예문 뜻": "necessity"
+    },
+    {
+        "단어": "Water",
+        "단어 뜻": "a necessity that many people buy on the Internet.",
+        "품사": "is",
+        "예문": "물은 많은 사람들이 인터넷에서 구매하는 필수품이다.",
+        "예문 뜻": "order"
+    },
+    {
+        "단어": "You",
+        "단어 뜻": "order the dog food online easily.",
+        "품사": "can",
+        "예문": "너는 강아지 사료를 온라인에서 쉽게 주문할 수 있다.",
+        "예문 뜻": "purchase"
+    },
+    {
+        "단어": "I",
+        "단어 뜻": "to purchase a used car.",
+        "품사": "want",
+        "예문": "나는 중고차를 구입하길 원한다.",
+        "예문 뜻": "quality"
+    },
+    {
+        "단어": "There",
+        "단어 뜻": "products of high quality in the store.",
+        "품사": "are",
+        "예문": "그 가게에는 고품질의 제품들이 있다.",
+        "예문 뜻": "quantity"
+    },
+    {
+        "단어": "The",
+        "단어 뜻": "depends on the quantity of goods.",
+        "품사": "price",
+        "예문": "가격은 상품의 양에 따라 다르다.",
+        "예문 뜻": "reasonable"
+    },
+    {
+        "단어": "The",
+        "단어 뜻": "fee of ski boots wasn't reasonable.",
+        "품사": "rental",
+        "예문": "스키 부츠 대여료는 적당하지 않았다.",
+        "예문 뜻": "receipt"
+    },
+    {
+        "단어": "Could",
+        "단어 뜻": "show me a receipt?",
+        "품사": "you",
+        "예문": "제게 영수증 좀 보여 주시겠어요?",
+        "예문 뜻": "refund"
+    },
+    {
+        "단어": "I",
+        "단어 뜻": "a refund on these pants?",
+        "품사": "have",
+        "예문": "이 바지를 환불할 수 있을까요?",
+        "예문 뜻": "trend"
+    },
+    {
+        "단어": "There",
+        "단어 뜻": "been a big trend for mini skirts.",
+        "품사": "has",
+        "예문": "미니스커트가 크게 유행하고 있다.",
+        "예문 뜻": "wrap"
+    }
+]
